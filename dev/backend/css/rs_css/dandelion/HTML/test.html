@@ -1,0 +1,21 @@
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function(){
+	$("#da-ex-dialog-div").dialog({
+		autoOpen: false, 
+		title: "Default UI Dialog", 
+		modal: true, 
+		width: "640", 
+		buttons: [{
+				text: "Close Dialog", 
+				click: function() {
+					$(this).dialog("close");
+				}}]
+	});
+	$(".da-ex-dialog-modal").live("click", function(event) {
+		$("#da-ex-dialog-div").dialog("option", {modal: true}).dialog("open");
+		event.preventDefault();
+	});
+});
+</script>

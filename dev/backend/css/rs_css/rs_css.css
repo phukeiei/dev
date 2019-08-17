@@ -1,0 +1,318 @@
+/* START RESET CSS TEMPLATE */
+.RESEARCHER_STYLE div.da-panel .da-panel-header .da-panel-title {
+	font-weight: bold;
+}
+.RESEARCHER_STYLE th {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+.RESEARCHER_STYLE a {
+    color: #000000;
+    outline: medium none;
+    text-decoration: none;
+}
+.RESEARCHER_STYLE a:link { 
+	color: #000000; 
+	text-decoration: none;
+}
+.RESEARCHER_STYLE a:visited { 
+	color: #000000; 
+	text-decoration: none;
+}
+.RESEARCHER_STYLE a:hover { 
+	color: #0066FF; 
+	text-decoration: none;
+}
+.RESEARCHER_STYLE p{
+	line-height: 1.5;
+	margin: 1em 0px;
+}
+/* END RESET CSS TEMPLATE */
+
+.error {
+    color: #FF0000;
+}
+.aCenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aLeft {
+    text-align: left;
+}
+.aRight {
+    text-align: right;
+}
+.vTop {
+	vertical-align: top;
+}
+.vMidden {
+	vertical-align: midden;
+}
+.vBottom {
+	vertical-align: bttom;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.link {
+    cursor: pointer;
+}
+.alink {
+    cursor: pointer;
+}
+.bold {
+    font-weight:bold;
+}
+/* table class p_table */
+table.p_table {
+	width: 100%;
+	border: 1px solid #BFBFBF;
+	/*font-size: 12px;*/
+}
+
+table.p_table th, table.p_table tfoot tr td, table.p_table tbody tr td {
+	padding: 10px;
+	border: 1px solid #BFBFBF;
+}
+
+table.p_table th {
+	background-color: #E4E4E4;
+}
+/*  END class p_table */
+
+/* table class noborder_table */
+table.noborder_table {
+	border: 0 none;
+	width: 100%;
+}
+
+table.noborder_table td{
+	padding: 5px;
+}
+
+/* table fix date box + label*/
+table.dnoborder_table{
+	border: 0 none;
+	width: 230px;
+}
+
+table.dnoborder_table td{
+	padding: 5px;
+}
+td.label {
+    width: 25%;
+    height: 22px;
+    background-color: #FFBB00;
+    padding: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/* table fix label */
+table.joinlabel_table td:first-child{
+	width: 50px;
+}
+
+.label {
+	background-color:#99CCFF;
+	/*font-family: TH Saraban;
+	font-size:13px;*/
+	display: block;
+	display:inline-block;
+	float:left;
+	font-weight: bolder;
+	text-align:top;
+	width: auto;
+	text-decoration:none;
+	color:#000;
+	text-align:center;
+	position:static;
+	padding:10px 25px 10px 25px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 8px 8px 0px 0px;
+}
+/*--ส่วนของการ search */
+table.rs_full {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+table.rs_width70 {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+table.rs_search tr.odd {
+    background-color: #FCFACA;
+}
+table.rs_search tr.even {
+    background-color: #FFFFFF;
+}
+table.rs_search tr.odd2 {
+    background-color: #F4F4F4;
+}
+table.rs_search tr.even2 {
+    background-color: #FFFFFF;
+}
+table.rs_search td.label {
+    width: 25%;
+    height: 22px;
+    background-color: #FFBB00;
+    padding: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+table.rs_search th {
+    vertical-align:top;
+    padding: 3px;
+    text-align: center;
+    height: 22px;
+    background-color: #FFBB00;/*#AF66D5;*/
+    border:1px solid #FFFFFF;
+    color: #FFFFFF;
+    /*font-family: "MS Sans Serif";
+    font-size: 14px;*/
+    white-space: nowrap;
+}
+table.rs_search  .odd td, table.rs_search .even td{
+    padding:3px;
+    border:1px solid #FFFFFF;
+}
+table.rs_search  .odd2 td, table.rs_search .even2 td{
+    padding:3px;
+    border:1px solid #FFFFFF;
+}
+table.rs_search  td {
+    vertical-align:top;
+    color: #000000;
+    /*font-family: "MS Sans Serif";
+    font-size: 14px;*/
+    text-decoration: none;
+}
+.rs_font{
+	color: #000000;
+    /*font-family: "sans-serif";
+    font-size: 14px;*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+form#formsearch table tr td{
+	padding:3px;
+}
+
+form#formsearch input , form#formsearch select {
+	padding : 3px;
+	/*font-size : 13px;*/
+}
+
+form#formsearch input[type=submit], form#formsearch input[type=button] {
+	padding : 3px 20px;
+	/*font-size : 13px;*/
+}
+
+/* หัวตารางสีน้ำเงิน ข้อความสีดำ และมีสีเส้นขอบ */
+table.rs_pj_search td.label {
+    width: 25%;
+    height: 22px;
+    background-color: #88B7F1;	/* #88B7F1 */
+    padding: 2px;
+    color: #111111;
+    font-weight: bold;
+}
+table.rs_pj_search th {
+    vertical-align:top;
+    padding: 3px;
+    text-align: center;
+    height: 22px;
+    background-color: #88B7F1;	/* #88B7F1 */
+    border:1px solid #111111;
+    color: #111111;
+    /*font-family: "MS Sans Serif";
+    font-size: 14px;*/
+    white-space: nowrap;
+}
+table.rs_pj_search  td {
+    vertical-align:top;
+	border:1px solid #111111;
+    color: #111111;
+    /*font-family: "MS Sans Serif";
+    font-size: 14px;*/
+    text-decoration: none;
+	padding: 5px;
+}
+table.rs_pj_search .odd td, table.rs_pj_search .even td{
+    padding:3px;
+    border:1px solid #111111;
+}
+table.rs_pj_search tr.odd {
+    background-color: #E0E7EF;	/* #E0E7EF */
+}
+table.rs_pj_search tr.even {
+    background-color: #FFFFFF;
+}
+
+/* 54160166 update from cgisite 
+meuzicxx table class p2_table*/
+table.p2_table
+{
+	width:100%;
+	border:1px solid #cacaca;
+	/*font-size: 14px;*/
+}
+
+table.p2_table th, table.p2_table tfoot tr td, table.p2_table tbody tr td {
+	padding: 10px;
+	border:1px solid #cacaca;
+}
+
+table.p2_table th {
+	background:#eeeeee url(../../images/default-header.png) repeat-x left top;
+}
+
+table.p2_table tr th
+{
+	vertical-align:middle;
+	text-align:center;
+}
+
+table.p2_table tr td.icon-column
+{
+	vertical-align:middle;
+	text-align: center;
+	width:20px;
+}
+
+table.p2_table tr td.icon-column-large
+{
+	vertical-align:middle;
+	text-align: center;
+	width:60px;
+}
+
+table.p2_table tr td.icon-column img
+{
+	margin:0 2px;
+}
+
+table.p2_table tr td.vTop
+{
+	vertical-align:top;
+}
+
+table.p2_table tr td.vMiddle
+{
+	vertical-align:middle;
+}
+
+table.p2_table tr td.vBottom
+{
+	vertical-align:bottom;
+}

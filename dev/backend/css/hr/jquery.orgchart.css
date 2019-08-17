@@ -1,0 +1,140 @@
+
+div.orgChart {
+  margin : 10px;
+  padding : 20px;
+}
+
+div.orgChart h2 {
+  margin : 0px;
+  font-size : 16px;
+  font-weight: normal;
+  min-height: 20px;
+}
+
+div.orgChart h2:hover {
+  background: #fcfaca;
+  cursor: text;
+  float: none;
+}
+
+div.orgChart ul {
+  list-style : none;
+  margin : 4px;
+  padding : 0px;
+  font-size : 0.8em;
+  text-align : left;
+}
+
+div.orgChart ul.stack,
+div.orgChart ul.stack ul { text-align : center; }
+
+div.orgChart table { width : 100%; }
+
+div.orgChart tr.lines td.line {
+  width : 1px;
+  height : 20px;
+}
+
+div.orgChart tr.lines td.top { border-top : 1px dashed black; }
+
+div.orgChart tr.lines td.left { border-right : 1px dashed black; }
+
+div.orgChart tr.lines td.right { border-left : 0px dashed black; }
+
+div.orgChart tr.lines td.half { width : 50%; }
+
+div.orgChart td {
+  text-align : center;
+  vertical-align : top;
+  padding : 0px 2px;
+}
+
+div.orgChart div.node {
+  cursor : default;
+  display : inline-block;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  width : 200px;
+  /*height : 100px;*/
+  /*background: #ffffff; !* Old browsers *!*/
+  /*background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); !* FF3.6+ *!*/
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb)); !* Chrome,Safari4+ *!*/
+  /*background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); !* Chrome10+,Safari5.1+ *!*/
+  /*background: -o-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); !* Opera 11.10+ *!*/
+  /*background: -ms-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); !* IE10+ *!*/
+  /*background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%); !* W3C *!*/
+  line-height : 1.3em;
+  border-radius : 4px;
+  -moz-border-radius : 4px;
+  -webkit-border-radius : 4px;
+  position: relative;
+  box-shadow: 1px 1px 0px #ddd;
+}
+
+.org-add-button,
+.org-del-button,
+.org-confirm-del-button {
+  position: absolute;
+  font-size: 12px;
+}
+
+.org-add-button {
+  width: 12px;
+  height: 12px;
+  bottom: 3px;
+  right: 10px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: url(./add.png) no-repeat 0 5px;
+  background-size: 12px 12px;
+}
+
+.org-add-button:hover,
+.org-del-button:hover {
+  background-color: #eef;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.org-del-button {
+  width: 12px;
+  height: 12px;
+  bottom: 4px;
+  left: 5px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: url(./cross.png) no-repeat 0 5px;
+  background-size: 12px 12px;
+}
+
+.org-input { width: 90px; }
+
+.org-confirm-del-button { display: none; }
+
+/* color level Org*/
+.org-level-1{
+  border: 2px solid #ec6464;
+  background-color: rgba(245, 188, 188, 0.7);
+}
+.org-level-2{
+  border: 2px solid #ec64b0;
+  background-color: rgba(236, 206, 213, 0.6);
+}
+.org-level-3{
+  border: 2px solid #97d884;
+  background-color: rgba(196, 216, 210, 0.36);
+  text-align: left;
+}
+.org-level-4{
+  border: 2px solid #72a8ea;
+  background-color: rgba(208, 221, 234, 0.71);
+  text-align: left;
+}
+.org-level-5{
+  border: 2px solid #a8aba8;
+  text-align: left;
+}

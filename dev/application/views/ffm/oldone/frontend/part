@@ -1,0 +1,10 @@
+http://10.80.39.251/ossd/index.php/ffm/frontend/C_test/show2
+<link href='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>core/main.css' rel='stylesheet' />
+<link href='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>daygrid/main.css' rel='stylesheet' />
+<link href='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>timegrid/main.css' rel='stylesheet' />
+<link href='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>list/main.css' rel='stylesheet' />
+<script src='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>core/main.js'></script>
+<script src='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>interaction/main.js'></script>
+<script src='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>daygrid/main.js'></script>
+<script src='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>timegrid/main.js'></script>
+<script src='<?php echo base_url()."application/views/ffm/frontend/packages/" ?>list/main.js'></script>

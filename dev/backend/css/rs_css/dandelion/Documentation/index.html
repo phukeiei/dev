@@ -1,0 +1,2291 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Dandelion Admin - Responsive Admin Template</title>
+	
+	<meta name="description" content="Hi there, thank you for purchasing this theme. If you have any questions that are beyond the scope of this documentation, please feel free to contact me via the comment section or email me at &#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109; Thanks.">
+	<meta name="author" content="nagaemas">
+	<meta name="copyright" content="nagaemas">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-07-25T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/custom.css" media="screen">
+
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="js/syntaxhighlighter/prettify/prettify.min.js"></script>
+    <link rel="stylesheet" href="js/syntaxhighlighter/prettify/prettify.min.css" media="screen" />
+    
+    <script type="text/javascript" src="js/syntaxhighlighter/jquery.syntaxhighlighter.min.js"></script>
+    <link rel="stylesheet" href="js/syntaxhighlighter/styles/style.min.css" media="screen" />
+    <link rel="stylesheet" href="js/syntaxhighlighter/styles/theme-balupton.css" media="screen" />
+    <link rel="stylesheet" href="js/syntaxhighlighter/styles/theme-google.css" media="screen" />
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#444444;background-image:url(assets/images/image_1.png);background-repeat:repeat;background-attachment:scroll;}
+		::-moz-selection{background:#A9CA60;color:#000000;}
+		::selection{background:#A9CA60;color:#000000;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_12.png);}
+		a{color:#A9CA60;}
+		hr{border-top:1px solid #CCCCCC;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#000000;color:#FFFFFF;background-image:url(assets/images/image_3.png);background-repeat:repeat;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #535353;-moz-text-shadow:1px 1px 0px #535353;text-shadow:1px 1px 0px #535353;}
+		#documenter_sidebar ol{border-top:1px solid #161616;}
+		#documenter_sidebar ol a{border-top:1px solid #535353;border-bottom:1px solid #161616;color:#FFFFFF;}
+		#documenter_sidebar ol a:hover{background:#A9CA60;color:#000000;border-top:1px solid #A9CA60;}
+		#documenter_sidebar ol a.current{background:#A9CA60;color:#000000;border-top:1px solid #A9CA60;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#full_feature_overview">Full Feature Overview</a></li>
+			<li><a href="#file_folder_structure">File & Folder Structure</a></li>
+			<li><a href="#building_the_base_html">Building the base HTML</a></li>
+			<li><a href="#grid_and_content">Grid and Content</a></li>
+			<li><a href="#custom_plugins">Custom Plugins</a></li>
+			<li><a href="#form_styling">Form Styling</a></li>
+			<li><a href="#button_styling">Button Styling</a></li>
+			<li><a href="#jquery_ui_widgets">jQuery-UI Widgets</a></li>
+			<li><a href="#external_plugins">External Plugins</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+			<li><a href="#credits">Credits</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright nagaemas 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Dandelion Admin</h1><h2>Responsive Admin Template</h2><hr><ul><li>Created: 05/22/2012</li><li>latest Update: 07/25/2012</li><li>By: nagaemas</li><li>Email: <a href="mailto:&#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a></li></ul><p>Hi there, thank you for purchasing this theme. If you have any questions that are beyond the scope of this documentation, please feel free to contact me via the comment section or email me at &#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109; Thanks.</p></section><section id="introduction">
+	<h3>Introduction</h3><hr class="notop">
+<p>
+	Dandelion Admin is a responsive, full featured admin template build exclusively for sale at ThemeForest.<br>
+	This template focuses on having a simple, clear design, while providing the most commonly used elements on web apps.</p>
+<h4>
+	Key Features</h4>
+<ul>
+	<li>
+		Pixel perfect responsive design, this templates renders perfectly even when displayed on smart phones, tablets and wide screen monitors</li>
+	<li>
+		Two layout modes: fixed and fluid</li>
+	<li>
+		Scrollable panels that works on touch devices<br>
+		The most common problem for mobile devices is to display content that expands horizontally, this template provides a solution by including a feature to add a horizontal scrollbar below the content by explicitly setting a css class.</li>
+	<li>
+		Three custom plugins:
+		<ul>
+			<li>
+				Animated circular statistics widget</li>
+			<li>
+				Wizard plugin with animated progress indicator</li>
+			<li>
+				Picklist, a dual select jquery plugin</li>
+		</ul>
+	</li>
+	<li>
+		More then 2000 icons included
+		<ul>
+			<li>
+				814 Black Icons (16x16 and 32x32) ~ Credits to <a href="http://www.yummgum.com">Yummygum</a></li>
+			<li>
+				814 White Icons (16x16 and 32x32) ~ Credits to&nbsp;<a href="http://www.yummgum.com">Yummygum</a></li>
+			<li>
+				513 Colored Icons (16x16) ~ Credits to <a href="http://led24.de/iconset/">Led Icons</a></li>
+		</ul>
+	</li>
+	<li>
+		CSS3 Animated Error page, customizable for every error code ~ Credits to <a href="http://www.pixeden.com">PixEden </a>for their amazing <a href="http://www.pixeden.com/psd-web-elements/hanging-note-sign-psd">freebie</a>.</li>
+	<li>
+		CSS3 styled Image gallery thumbnails</li>
+	<li>
+		Toolbars with unlimited level dropdown menu</li>
+</ul>
+<h4>
+	Support Request</h4>
+<p>
+	Support requests for this template can be done via the comments section at ThemeForest, or you can directly mail me at <a href="mailto:&#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a></p>
+</section>
+<section id="full_feature_overview">
+	<h3>Full Feature Overview</h3><hr class="notop">
+<ul>
+	<li>
+		Full responsive design</li>
+	<li>
+		Two layout modes: fluid and fixed</li>
+	<li>
+		Optimized images using <a href="http://punypng.com">punyPNG</a></li>
+	<li>
+		Header dropdown menu for user tasks</li>
+	<li>
+		Header dropdown menu for messages and notifications</li>
+	<li>
+		Collapsible navigation</li>
+	<li>
+		Two statistic widgets
+		<ul>
+			<li>
+				Circular statistic</li>
+			<li>
+				Summary statistic</li>
+		</ul>
+	</li>
+	<li>
+		Three custom plugins
+		<ul>
+			<li>
+				Animated circular statistic widget</li>
+			<li>
+				Wizard plugin with animated progress indicator</li>
+			<li>
+				Picklist, a dual select jquery plugin</li>
+		</ul>
+	</li>
+	<li>
+		18 Plugins included and styled
+		<ul>
+			<li>
+				jQuery Chosen Plugin</li>
+			<li>
+				jQuery colorpicker Plugin</li>
+			<li>
+				jQuery DataTables Plugin</li>
+			<li>
+				jQuery Elastic Plugin</li>
+			<li>
+				elFinder</li>
+			<li>
+				elRTE</li>
+			<li>
+				Fullcalendar</li>
+			<li>
+				jGrowl</li>
+			<li>
+				Photoswipe</li>
+			<li>
+				placeholder plugin, a fallback for placeholders on non HTML5 browsers</li>
+			<li>
+				PLUpload</li>
+			<li>
+				prettyPphoto</li>
+			<li>
+				prettyCheckboxes</li>
+			<li>
+				SyntaxHighligter</li>
+			<li>
+				jQuery Tipsy</li>
+			<li>
+				jQuery validate</li>
+			<li>
+				Flot Charting Library</li>
+			<li>
+				jQuery iOS Button</li>
+		</ul>
+	</li>
+	<li>
+		Fully styled jquery&nbsp;ui widget
+		<ul>
+			<li>
+				Progressbar (four colors included, animated using CSS3)</li>
+			<li>
+				Sliders (four colors included)</li>
+			<li>
+				Datepicker with timepicker addon</li>
+			<li>
+				Dialogs</li>
+			<li>
+				Buttonsets</li>
+			<li>
+				Tabs</li>
+			<li>
+				Accordions</li>
+			<li>
+				Spinner</li>
+		</ul>
+	</li>
+	<li>
+		Two table styles
+		<ul>
+			<li>
+				Usual table style</li>
+			<li>
+				Detail view table for displaying single data attributes</li>
+		</ul>
+	</li>
+	<li>
+		Content area
+		<ul>
+			<li>
+				Plain content area</li>
+			<li>
+				Panel content area (can be collapsible)</li>
+			<li>
+				Horizontally scrollable panels (automatically set by setting a class name)</li>
+		</ul>
+	</li>
+	<li>
+		Panel toolbar with unlimited levels dropdown menu</li>
+	<li>
+		Form layouts and sizes
+		<ul>
+			<li>
+				Inline form layout</li>
+			<li>
+				Block form layout</li>
+			<li>
+				Column form layout</li>
+			<li>
+				Fieldset</li>
+			<li>
+				Three form sizes
+				<ul>
+					<li>
+						small</li>
+					<li>
+						default</li>
+					<li>
+						large</li>
+				</ul>
+			</li>
+			<li>
+				Form error message
+				<ul>
+					<li>
+						On top of the form as a summary</li>
+					<li>
+						Below the form input</li>
+				</ul>
+			</li>
+			<li>
+				Form notes, a&nbsp;small note that can be displayed on top of the input</li>
+		</ul>
+	</li>
+	<li>
+		CSS3 animated error page</li>
+	<li>
+		CSS3 styled image gallery</li>
+	<li>
+		CSS3 styled buttons (6 colors)</li>
+	<li>
+		2000+ icons included in several colors and sizes</li>
+</ul>
+</section>
+<section id="file_folder_structure">
+	<h3>File & Folder Structure</h3><hr class="notop">
+<p>
+	Before going into details, lets look at how this template&#39;s files and folders are structured.</p>
+<h4>
+	Folder Structure</h4>
+<h4>
+	<img alt="" src="assets/images/image_7.png" style="width: 135px; height: 240px; "></h4>
+<pre>
+1. css
+   This folder is the root folder where all css stylesheets are located
+   1.1 core
+       This folder contains all core css files that styles every core elements
+
+2. gallery
+   This folder contains all gallery images and thumbnails for the demo page, it&#39;s safe to delete this folder
+
+3. images
+   This folder contains all images and icons
+   3.1 bg
+       This folder contains all body background patterns
+   3.2 headers
+       This folder contains all header background patterns
+   3.3 icons
+       This folder contains all icon files, black, white, and color with 16x16 and 32x32 sizes.
+
+4. js
+   This folder contains all JavaScript files, which are the startup script and some plugin files
+   4.1 core
+       This folder contains all core JavaScript files, that is required by this template to function properly
+       4.1.1 plugins
+             This folder contains the three custom plugins build for this template
+   4.2 demo
+       This folder contains all javascript files needed to run the demo on every page, it&#39;s safe to delete this folder if you don&#39;t want to use the demo files
+
+5. jui
+   This folder contains all css, javascript and images for jquery-ui
+
+6. plugins
+   This folder contains all external plugin files which are:
+   - jquery chosen plugin for styling select inputs
+   - jquery colorpicker plugin
+   - jquery datatables plugin, an extensive, rock solid table plugin
+   - jquery elastic plugin, for auto growing textareas
+   - elfinder for easy file management
+   - elrte, a WYSIWYG text editor
+   - Fullcalendar, calendar plugin
+   - jgrowl, MacOSx notification style plugin
+   - photoswipe, a gallery plugin optimized for touch devices
+   - placeholder plugin a fallback for HTML5 placeholders on IE
+   - plupload, a file uploading plugin
+   - prettyphoto, a image displaying plugin
+   - syntaxhighligter, a plugin that outputs beautiful syntax highlighting
+   - jquery tipsy, a tooltip plugin
+   - jquery validate plugin</pre>
+<h4>
+	Core CSS Files</h4>
+<p>
+	Most of this template elements are styled by the CSS files located in <strong>/css/core</strong>, there are in total 15 files in this folder, each file styling a specific element.</p>
+<p>
+	These CSS files are included indirectly by default on every page by including <strong>/css/dandelion.css</strong>.</p>
+<pre class="highlight">
+/* The Contents of /css/dandelion.css */
+
+@import url(&quot;core/typography.css&quot;);
+@import url(&quot;core/core.css&quot;);
+@import url(&quot;core/panel.css&quot;);
+@import url(&quot;core/form-structure.css&quot;);
+@import url(&quot;core/form-elements.css&quot;);
+@import url(&quot;core/form-message.css&quot;);
+@import url(&quot;core/button.css&quot;);
+@import url(&quot;core/table.css&quot;);
+@import url(&quot;core/plugins.css&quot;);
+@import url(&quot;core/gallery.css&quot;);
+@import url(&quot;core/statistic.css&quot;);
+@import url(&quot;core/panel-toolbar.css&quot;);
+@import url(&quot;core/wizard.css&quot;);
+@import url(&quot;core/error.css&quot;);
+
+/* Customizer stylesheet, remove if not needed */
+@import url(&quot;core/customizer.css&quot;);</pre>
+<p>
+	The CSS files are separated in order to increase readability, and ease maintenance.</p>
+<p>
+	In case you want to merge these files into one file to minimize HTTP requests, there&#39;s already a file that merges all those CSS files into one file, which is&nbsp;<strong>/css/dandelion.min.css</strong>.</p>
+<p>
+	This file is actually a merged version of all these CSS files, it&#39;s recommended to use this file when in production mode :)</p>
+<p>
+	Below is a list of all CSS files, along with a short description of what each file contains:</p>
+<ul>
+	<li>
+		<strong>button.css</strong><br>
+		Contains general button styling, with six color schemes (red, green, blue, orange, gray and pink)</li>
+	<li>
+		<strong>core.css</strong><br>
+		Contains the main layout styles, (body, header, navigation, content area and footer)</li>
+	<li>
+		<strong>customizer.css</strong><br>
+		Contains the customizer layout style, this file can be removed if not needed</li>
+	<li>
+		<strong>error.css</strong><br>
+		Contains the error page styles</li>
+	<li>
+		<strong>form-elements.css</strong><br>
+		Contains all form element styles (input, textarea, select, custom file input)</li>
+	<li>
+		<strong>form-message.css</strong><br>
+		Contains all block message styles (error, warning, info and success)</li>
+	<li>
+		<strong>form-structure.css</strong><br>
+		Contains the main form structure styles</li>
+	<li>
+		<strong>gallery.css</strong><br>
+		Contains the gallery thumbnail styles and the image link styles</li>
+	<li>
+		<strong>panel-toolbar.css</strong><br>
+		Contains the panel toolbar css class</li>
+	<li>
+		<strong>panel.css</strong><br>
+		Contains the content sections css classes, (plain content, panel content, scrollable content)</li>
+	<li>
+		<strong>plugins.css</strong><br>
+		Contains css style overrides to force plugin styles to match this template</li>
+	<li>
+		<strong>statistic.css</strong><br>
+		Contains css styles for statistical widgets</li>
+	<li>
+		<strong>table.css</strong><br>
+		Contains css styles for tables, and jquery DataTables plugin</li>
+	<li>
+		<strong>typography.css</strong><br>
+		Contains this template&#39;s typography styles</li>
+	<li>
+		<strong>wizard.css</strong><br>
+		Contains css styles for the wizard navigation, which is utilized by this template&#39;s custom Wizard plugin</li>
+</ul>
+<p>
+	<strong>Note:</strong> Media queries doesn&#39;t have it&#39;s own stylesheet, instead they are placed on the bottom of each CSS file.</p>
+</section>
+<section id="building_the_base_html">
+	<h3>Building the base HTML</h3><hr class="notop">
+<p>
+	This whole template is coded with XHTML markup and CSS3.</p>
+<p>
+	Building the base HTML structure is pretty straightforward. On this section, we&#39;ll go through a complete process on creating a complete page that includes the minimal required javascript and css files.</p>
+<h4>
+	The Default XHTML Header With The Necessary Metatags</h4>
+<pre class="highlight">
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+&lt;!-- Viewport metatags --&gt;
+&lt;meta name=&quot;HandheldFriendly&quot; content=&quot;true&quot; /&gt;
+&lt;meta name=&quot;MobileOptimized&quot; content=&quot;320&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+
+&lt;!-- iOS webapp metatags --&gt;
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt;
+
+&lt;!-- iOS webapp icons --&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;touch-icon-iphone.png&quot; /&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;touch-icon-ipad.png&quot; /&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;touch-icon-retina.png&quot; /&gt;</pre>
+<p>
+	There are three metatags section on the code above:</p>
+<ol>
+	<li>
+		Viewport metatags, are all required metatags for this template to display correctly on mobile phones and tablets.</li>
+	<li>
+		iOS webapp metatags, are all required metatags that makes this template webapp compatible, where the default iOS headers will be hidden on iOS</li>
+	<li>
+		iOS webapp icons, are all required metatags that makes this template accessible as an icon on the homescreen of iOS devices.</li>
+</ol>
+<h4>
+	Including The Core CSS, jQuery and Core JavaScript Files</h4>
+<pre class="highlight">
+&lt;!-- CSS Reset --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/reset.css&quot; media=&quot;screen&quot; /&gt;
+&lt;!--  Fluid Grid System --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/fluid.css&quot; media=&quot;screen&quot; /&gt;
+&lt;!--  Main Stylesheet --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/dandelion.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;!-- jQuery JavaScript File --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Core JavaScript Files --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/core/dandelion.core.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	There are three css stylesheets that can&#39;t be missed, two of them is not part of the core styles, but necessary to get this template to display correctly:</p>
+<ol>
+	<li>
+		CSS reset, &nbsp;a stylesheet that resets the default browser stylesheet, to make this template looks consistent on all browsers.</li>
+	<li>
+		Fluid grid system, a stylesheet that contains fluid grid system, for dividing content into grids</li>
+	<li>
+		Main stylesheet, contains all core css styles</li>
+</ol>
+<p>
+	At last, the main JavaScript file that contains all necessary startup code and template functions is included.</p>
+<h4>
+	Page Title, Main Wrapper and Logo</h4>
+<p>
+	Here we declare the page title between the&nbsp;<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">&lt;title&gt;&lt;/title&gt;</span>&nbsp;tags, and we start opening the&nbsp;<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">&lt;body&gt;&lt;/body&gt;</span>&nbsp;tag.</p>
+<pre class="highlight">
+&lt;title&gt;Dandelion Admin - Dashboard&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!--
+        Main Wrapper. 
+        Set this to &#39;fixed&#39; for fixed layout and &#39;fluid&#39; for fluid layout&#39;
+    --&gt;
+    &lt;div id=&quot;da-wrapper&quot; class=&quot;fluid&quot;&gt;
+        &lt;!-- Header --&gt;
+        &lt;div id=&quot;da-header&quot;&gt;
+            &lt;div id=&quot;da-header-top&quot;&gt;
+                &lt;!-- Container --&gt;
+                &lt;div class=&quot;da-container clearfix&quot;&gt;
+                    &lt;!-- Logo Container.
+                         All images put here will be vertically centered
+                    --&gt;
+                    &lt;div id=&quot;da-logo-wrap&quot;&gt;
+                       <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;div id=&quot;da-logo&quot;&gt;
+                            &lt;div id=&quot;da-logo-img&quot;&gt;
+                                &lt;a href=&quot;dashboard.html&quot;&gt;
+                        <span class="Apple-tab-span" style="white-space:pre"> </span>           &lt;img src=&quot;your-logo-url&quot; alt=&quot;&quot; /&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;</pre>
+<p>
+	Below the body tag, we can directly see a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-wrapper</span>. This is the point where we need decide whether our template will have a fixed or fluid width by default. Reading the comment on the code above should explain how to configure the layout mode, give the&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">#da-wrapper</span>&nbsp;div a class name:&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.fixed</span>&nbsp;for fixed layout, or&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.fluid</span>&nbsp;for fluid layout mode. Leaving the class attribute blank for this div, will cause the layout use the&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">.fluid</span>&nbsp;mode.</p>
+<p>
+	We go further by opening the header and top header, then we&#39;ll see a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the class&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.da-container</span>.</p>
+<p>
+	This is a class for all containers, shared among sections that functions as a centered wrapper for its contents, having 100% width for fluid layouts, and 960px for fixed layouts.</p>
+<p>
+	The next line after that, we declare the header and the top header section. The top header will contain the logo, and the header toolbar which will be explained on the next section.</p>
+<p>
+	The logo container as on the code above, is a&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-logo-wrap</span>. You can customize whether you want your logo to be a link, or just a plain image. If you want it to be a plain image, remove the &nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;a&gt;&lt;/a&gt;</span>&nbsp;tag that wraps the image.</p>
+<h4>
+	The Header Toolbar</h4>
+<pre class="highlight">
+                    &lt;!-- Header Toolbar Menu --&gt;
+                    &lt;div id=&quot;da-header-toolbar&quot; class=&quot;clearfix&quot;&gt;
+
+                        &lt;div id=&quot;da-user-profile&quot;&gt;
+                            &lt;div id=&quot;da-user-avatar&quot;&gt;
+                                &lt;img src=&quot;your-avatar-url&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                            &lt;div id=&quot;da-user-info&quot;&gt;
+                                John Doe
+                                &lt;span class=&quot;da-user-title&quot;&gt;Creative Director&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;ul class=&quot;da-header-dropdown&quot;&gt;
+                                &lt;li class=&quot;da-dropdown-caret&quot;&gt;
+                                    &lt;span class=&quot;caret-outer&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;caret-inner&quot;&gt;&lt;/span&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;da-dropdown-divider&quot;&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;your-url&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;your-url&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;your-url&quot;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id=&quot;da-header-button-container&quot;&gt;
+                            &lt;ul&gt;
+                                &lt;li class=&quot;da-header-button notif&quot;&gt;
+                                   <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;span class=&quot;da-button-count&quot;&gt;32&lt;/span&gt;
+                                <span class="Apple-tab-span" style="white-space:pre"> </span>   &lt;a href=&quot;#&quot;&gt;Notifications&lt;/a&gt;
+                                    &lt;ul class=&quot;da-header-dropdown&quot;&gt;
+                                        &lt;li class=&quot;da-dropdown-caret&quot;&gt;
+                                            &lt;span class=&quot;caret-outer&quot;&gt;&lt;/span&gt;
+                                            &lt;span class=&quot;caret-inner&quot;&gt;&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                        &lt;span class=&quot;da-dropdown-sub-title&quot;&gt;Notifications&lt;/span&gt;
+                                        &lt;ul class=&quot;da-dropdown-sub&quot;&gt;
+                                            &lt;li class=&quot;unread&quot;&gt;
+                                                &lt;a href=&quot;#&quot;&gt;
+                                                    &lt;span class=&quot;message&quot;&gt;
+                                                        Lorem ipsum dolor sit amet
+                                                    &lt;/span&gt;
+                                                    &lt;span class=&quot;time&quot;&gt;
+                                                        January 21, 2012
+                                                    &lt;/span&gt;
+                                                &lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;a class=&quot;da-dropdown-sub-footer&quot;&gt;
+                                            View all notifications
+                                        &lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                            <span class="Apple-tab-span" style="white-space:pre"> </span>   &lt;li class=&quot;da-header-button message&quot;&gt;
+                                    &lt;span class=&quot;da-button-count&quot;&gt;5&lt;/span&gt;
+                                    &lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;
+                                    &lt;ul class=&quot;da-header-dropdown&quot;&gt;
+                                        &lt;li class=&quot;da-dropdown-caret&quot;&gt;
+                                            &lt;span class=&quot;caret-outer&quot;&gt;&lt;/span&gt;
+                                            &lt;span class=&quot;caret-inner&quot;&gt;&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                        <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;span class=&quot;da-dropdown-sub-title&quot;&gt;Messages&lt;/span&gt;
+                                        <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;ul class=&quot;da-dropdown-sub&quot;&gt;
+                                                &lt;li class=&quot;unread&quot;&gt;
+                                                    &lt;a href=&quot;#&quot;&gt;
+                                                        &lt;span class=&quot;message&quot;&gt;
+                                                            Lorem ipsum dolor sit amet
+                                                        &lt;/span&gt;
+                                                        &lt;span class=&quot;time&quot;&gt;
+                                                            January 21, 2012
+                                                        &lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;a class=&quot;da-dropdown-sub-footer&quot;&gt;
+                                            <span class="Apple-tab-span" style="white-space:pre"> </span>   View all messages
+                                            &lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                            <span class="Apple-tab-span" style="white-space:pre"> </span>   &lt;li class=&quot;da-header-button logout&quot;&gt;
+                                    &lt;a href=&quot;your-logout-url&quot;&gt;Logout&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;                                    
+                &lt;/div&gt;
+            &lt;/div&gt;</pre>
+<p>
+	Here we start declaring the header toolbar menu, which is part of the top header. This toolbar will contain the user avatar, user menu, and toolbar buttons.</p>
+<p>
+	The user avatar and the username, along with the user menu is contained within a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-user-profile</span>.</p>
+<p>
+	This can be customized by changing the avatar image url, the username and the menu items. Customizing the code of this section should be self explanatory after reading the code above.</p>
+<p>
+	<strong>Notes:&nbsp;</strong></p>
+<ol>
+	<li>
+		<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;li class=&quot;da-dropdown-divider&quot;&gt;&lt;/li&gt;</span>&nbsp;on the user menu is used to put a line separator between the menu items.</li>
+	<li>
+		<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;li class=&quot;da-dropdown-caret&quot;&gt;&lt;/li&gt;</span>&nbsp;is used to make the up-pointing arrow, so make sure to include it on top of every dropdown menu.</li>
+</ol>
+<p>
+	Following the user section is the toolbar buttons, which is wrapped in a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-header-button-container</span>, and they have the following properties:</p>
+<ul>
+	<li>
+		These buttons can be plain custom buttons that links to a specific page, and they can contain dropdown menus.</li>
+	<li>
+		The dropdown menus on these buttons has the same structure as the dropdown menu on the user section.</li>
+	<li>
+		The buttons can have a bubble that contains a specific information like notification count etc.</li>
+</ul>
+<p>
+	For your info, the buttons included on this template is used for messages, notifications and the logout button.&nbsp;</p>
+<h4>
+	The Bottom Header</h4>
+<pre class="highlight">
+            &lt;div id=&quot;da-header-bottom&quot;&gt;
+                &lt;!-- Container --&gt;
+                &lt;div class=&quot;da-container clearfix&quot;&gt;
+                
+                <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;div id=&quot;da-search&quot;&gt;
+                    <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;form&gt;
+                        <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;input type=&quot;text&quot; placeholder=&quot;Search...&quot; /&gt;
+                     &lt;/form&gt;
+                 &lt;/div&gt;
+
+                    &lt;!-- Breadcrumbs --&gt;
+                    &lt;div id=&quot;da-breadcrumb&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li class=&quot;active&quot;&gt;&lt;span&gt;&lt;img src=&quot;images/icons/black/16/home.png&quot; alt=&quot;Home&quot; /&gt;Dashboard&lt;/span&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;</pre>
+<p>
+	The bottom header contains the search form, and the breadcrumbs. The search form is wrapped in a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-search</span>, and the breadcrumbs is contained in an&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;ul&gt;&lt;/ul&gt;</span>&nbsp;tag. You can put any link here to act as breadcrumbs.</p>
+<h4>
+	The Main Wrapper and The Main Navigation</h4>
+<pre class="highlight">
+        &lt;!-- Content --&gt;
+        &lt;div id=&quot;da-content&quot;&gt;
+            
+            &lt;!-- Container --&gt;
+            &lt;div class=&quot;da-container clearfix&quot;&gt;    
+            &lt;!-- Sidebar Separator do not remove --&gt;
+                &lt;div id=&quot;da-sidebar-separator&quot;&gt;&lt;/div&gt;
+                
+                &lt;!-- Sidebar --&gt;
+                &lt;div id=&quot;da-sidebar&quot;&gt;
+                
+                    &lt;!-- Main Navigation --&gt;
+                    &lt;div id=&quot;da-main-nav&quot; class=&quot;da-button-container&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li class=&quot;active&quot;&gt;
+                                &lt;a href=&quot;dashboard.html&quot;&gt;
+                                    &lt;!-- Icon Container --&gt;
+                                    &lt;span class=&quot;da-nav-icon&quot;&gt;
+                                        <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;img src=&quot;images/icons/black/32/home.png&quot; alt=&quot;Dashboard&quot; /&gt;
+                                    &lt;/span&gt;
+                                    Dashboard
+                                &lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;</pre>
+<p>
+	Here we start opening the main wrapper. The main wrapper will contain all contents, along with the main navigation.</p>
+<p style="text-align: left;">
+	The main wrapper is a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-content</span><em><strong>&nbsp;</strong></em>folllowed by the container, a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the class&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; white-space: pre; background-color: rgb(239, 239, 239); ">.da-container</span>.<em><strong>&nbsp;</strong></em>This container has been mentioned on the previous section, a container that is 960px wide on fixed layout, and 100% wide on fluid layout.</p>
+<p>
+	Directly after that, we can see the sidebar separator that will display a separator image on the left side of the main content.</p>
+<p>
+	The main navigation comes there after, which is an&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;ul&gt;&lt;/ul&gt;</span>&nbsp;tag wrapped in a&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;with the id <span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-main-nav</span>.</p>
+<p>
+	These links has the following structure:</p>
+<p>
+	<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">&lt;li&gt;&lt;/li&gt;</span>&nbsp;tag followed by a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;span&gt;&lt;/span&gt;</span>&nbsp;tag that will contain the menu icon.</p>
+<pre class="highlight">
+&lt;li class=&quot;active&quot;&gt;
+    &lt;span class=&quot;da-nav-icon&quot;&gt;&lt;img src=&quot;the-icon-url&quot; /&gt;&lt;/span&gt;
+    Menu Label
+&lt;/li&gt;</pre>
+<p>
+	<strong>Note:</strong></p>
+<ul>
+	<li>
+		You may notice on the code above, that the&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;li&gt;&lt;/li&gt;</span>&nbsp;tag has a class name&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.active</span>. This indicates that the menu is active.</li>
+	<li>
+		The icons are directly inserted as an image instead of a css class background image (the icon set contains 2000+ icons, thus making 2000 css classes).&nbsp;This will improve browser performance and prevent crashing for Adobe Dreamweaver users.</li>
+</ul>
+<h4>
+	The Main Content</h4>
+<pre class="highlight">
+                &lt;!-- Main Content Wrapper --&gt;
+                &lt;div id=&quot;da-content-wrap&quot; class=&quot;clearfix&quot;&gt;
+                <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;!-- Content Area --&gt;
+                <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;div id=&quot;da-content-area&quot;&gt;
+                    <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;div class=&quot;grid_2&quot;&gt;
+                        <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;div class=&quot;da-panel&quot;&gt;
+                            <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;div class=&quot;da-panel-header&quot;&gt;
+                                <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;span class=&quot;da-panel-title&quot;&gt;
+                                        &lt;img src=&quot;your-icon-url&quot; /&gt;
+                                        Panel Label
+                                    &lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;da-panel-content&quot;&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;</pre>
+<p>
+	Here we declare the main content wrapper, which wraps the whole page content. The contents are divided into grids with a four grids based system.</p>
+<p>
+	Each grid can be a panel, or a panel widget:</p>
+<ul>
+	<li>
+		<strong>Panel</strong><br>
+		Panel is a page section block that will have a header. Panels can also be collapsible.</li>
+	<li>
+		<strong>Panel Widget</strong><br>
+		Panel widget is a plain page section, a containing block with a white background that can have any kind of content in it.</li>
+</ul>
+<p>
+	More about these panels will be explained on the upcoming section.</p>
+<h4>
+	The Footer and HTML Closing Tag</h4>
+<pre class="highlight">
+        &lt;!-- Footer --&gt;
+        &lt;div id=&quot;da-footer&quot;&gt;
+            &lt;div class=&quot;da-container clearfix&quot;&gt;
+               <span class="Apple-tab-span" style="white-space:pre"> </span>&lt;p&gt;Copyright 2012. Dandelion Admin. All Rights Reserved.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<div>
+	<p>
+		Here we have the footer where our page ends. Just a usual, boring footer. Customize it as you wish :)</p>
+	<p>
+		Congratulations! Now you have an empty page where you can start working on by adding content and make it interactive by using the included plugins.</p>
+</div>
+<p>&nbsp;
+	</p>
+</section>
+<section id="grid_and_content">
+	<h3>Grid and Content</h3><hr class="notop">
+<h4>
+	The Grid</h4>
+<p>
+	The contents on this template are divided into grids. The grids are fluid and responsive, meaning that they will adapt to screen size, and they have a screen width limit. If the screen width becomes goes bigger or smaller than the limit, then the grid layout will change.</p>
+<p>
+	These grids are a four based grid, each having the following class names:</p>
+<ul>
+	<li>
+		<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.grid_1</span>, which has a width 25% of its container</li>
+	<li>
+		<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.grid_2</span>, which has a width 50% of its container</li>
+	<li>
+		<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.grid_3</span>, which has a width 75% of its container</li>
+	<li>
+		<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.grid_4</span>, which&nbsp;has a width 100% of its container</li>
+</ul>
+<p>
+	<strong>Note:</strong>&nbsp;On this template, if the screen becomes smaller than 768px, all grids will have a 100% width</p>
+<p>
+	Below is an example of these grids:</p>
+<p>
+	<img alt="" src="assets/images/image_11.png" style="max-width: 100%; "></p>
+<p>
+	Defining those grids requires you to declare a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag, and give it the correct class name.</p>
+<p>
+	<strong>Note:</strong> It&#39;s recommended to always put the grids into the main container of the template.</p>
+<h5>
+	Example</h5>
+<pre class="highlight">
+&lt;div class=&quot;grid_2&quot;&gt;
+    &lt;div class=&quot;da-panel collapsible&quot;&gt;
+        &lt;div class=&quot;da-panel-header&quot;&gt;
+            &lt;span class=&quot;da-panel-title&quot;&gt;
+                &lt;img src=&quot;your-icon-url&quot; /&gt;
+                Panel Label
+            &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;da-panel-content&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	The above code snippet will render a panel, like the second row on the preview image above.</p>
+<h4>
+	The Content</h4>
+<p>
+	This template divides its content using two differenty types of content:</p>
+<ul>
+	<li>
+		Plain Content</li>
+	<li>
+		Panel Content</li>
+</ul>
+<h5>
+	Plain Content</h5>
+<p>
+	Plain content block are plain sections with a white background that can wrap all kinds of content, a plain content block has the following structure:</p>
+<pre class="highlight">
+&lt;div class=&quot;grid_2&quot;&gt;
+    &lt;div class=&quot;da-panel-widget&quot;&gt;
+        Plain grid area
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	It looks like this :)</p>
+<p>
+	<img alt="" src="assets/images/image_15.png"></p>
+<h5>
+	Panel Content</h5>
+<p>
+	Panel content are panels that has a header, it looks like the content blocks on the preview image above.</p>
+<p>
+	A panel has the following HTML structure:</p>
+<pre class="highlight">
+&lt;div class=&quot;da-panel collapsible&quot;&gt;
+    &lt;div class=&quot;da-panel-header&quot;&gt;
+        &lt;span class=&quot;da-panel-title&quot;&gt;
+            &lt;img src=&quot;your-icon-url&quot; /&gt;
+            Panel Label
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;da-panel-content with-padding&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>&nbsp;
+	</p>
+<ol>
+	<li>
+		Panels are&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tags with the class&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.da-panel</span></li>
+	<li>
+		It can be collapsible, this will be automatically done by giving it the class&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.collapsible</span></li>
+	<li>
+		Panel title will be put in the panel header, a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the class&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.da-panel-header</span></li>
+	<li>
+		This header will contain the title, the icon and a toggle button for collapsible panels</li>
+	<li>
+		Panel contents should be put into a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the class&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.da-panel-content</span></li>
+	<li>
+		Panel contents can have padding, this can be achieved by giving panel content the class&nbsp;<em><strong><span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.with-padding</span>&nbsp;</strong></em>like on the code example above. Remove the class if you want a panel without paddings.</li>
+</ol>
+<h4>
+	Scrollable Panel Content</h4>
+<p>
+	The most common problem on mobile devices, and even desktops are content, usually tables that expands horizontally overflowing the container.</p>
+<p>
+	This template provides a solution by adding horizontal scrollbars below a content panel, by explicitly setting a class name on the panel if its content might overflow.</p>
+<p>
+	<img alt="" src="assets/images/image_16.png"></p>
+<p>
+	There was also an option to automate this for every overflowing content, but it&#39;s better by setting it explicitly, because it will make the code more efficient, and will prevent any undesired results.</p>
+<p>
+	In order to use this functionality, you have to do the following steps:</p>
+<ol>
+	<li>
+		Include tinyscrollbar plugin</li>
+	<li>
+		Give the panel whose content might overflow an additional class, <span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.scrollable</span></li>
+	<li>
+		MAKE SURE the template&#39;s core script is included (forgetting to include this script will actually make this template lose most of its functionality)</li>
+</ol>
+<h5>
+	Example:</h5>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.tinyscrollbar.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/core/dandelion.core.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;grid_2&quot;&gt;
+    &lt;div class=&quot;da-panel scrollable&quot;&gt;
+        &lt;div class=&quot;da-panel-header&quot;&gt;
+            &lt;span class=&quot;da-panel-title&quot;&gt;
+                &lt;img src=&quot;images/icons/color/calendar_2.png&quot; alt=&quot;&quot; /&gt;
+                Panel Title
+            &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;da-panel-content&quot;&gt; &lt;-- Put your content here --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	This will make sure that a panel is scrollable if its content overflows the container.</p>
+<p>
+	<strong>Note:</strong> If the content changes by DOM operations, make sure to update the scrollbars by calling:</p>
+<p>
+	<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">.tinyscrollbar_update();</span></p>
+<p>
+	Any problem or bugs with these scrollable functionality, please contact me.</p>
+<p>
+	That&#39;s all about the template&#39;s main structure, the next sections will go through the real functionalities :)</p>
+</section>
+<section id="custom_plugins">
+	<h3>Custom Plugins</h3><hr class="notop">
+<p>
+	There are three custom plugins included on this template, they are all special builds for this template because there are no suitable plugins available to get the desired results :)</p>
+<h4>
+	Circular Statistic Widget</h4>
+<p>
+	<img alt="" src="assets/images/image_4.png"></p>
+<p>
+	This plugin will render, with the help of HTML5 Canvas an animated circular statistic widget.</p>
+<p>
+	This widget can help you display data as a percentage or as fraction, so it requires a value and a maximum value.</p>
+<p>
+	Internet Explorer users require to include excanvas javascript plugin to simulate the canvas element,</p>
+<p>
+	To ease the use this plugin, jquery-metadata plugin should be included. This was choosen over HTML5 data attribute because this template is build upon XHTML, so the page will be invalid when using HTML5 data attributes.</p>
+<p>
+	On the dashboard on the demo page, we have the following structure to render this widget:</p>
+<pre class="highlight">
+&lt;ul class=&quot;da-circular-stat-wrap&quot;&gt;
+    &lt;li class=&quot;da-circular-stat {fillColor: &#39;#a6d037&#39;, value: 55, maxValue: 98, label: &#39;Seeds Collected&#39;}&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<p>
+	As you probably notice, this will render a statistic widget like the first one on the preview image above.</p>
+<p>
+	By using jquery-metadata plugin, options for a single widget can be specified on the class attribute, between the curly brackets, separated by commas, preventing the need to initialize the plugin on every element.</p>
+<p>
+	Using this plugin requires you to include the following files:</p>
+<ul>
+	<li>
+		/js/jquery.metadata.js</li>
+	<li>
+		/js/excanvas.js, inside IE conditional comments</li>
+	<li>
+		/js/core/plugins/dandelion.circularstat.min.js</li>
+	<li>
+		/css/core/statistic.css</li>
+</ul>
+<h5>
+	Example:</h5>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.metadata.js&quot;&gt;&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/excanvas.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/core/plugins/dandelion.circularstat.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+(function($) {
+    $(document).ready(function(e) {
+        $(&quot;.da-circular-stat&quot;).daCircularStat();
+    });
+}) (jQuery);
+
+&lt;/script&gt;
+
+&lt;ul class=&quot;da-circular-stat-wrap&quot;&gt;
+    &lt;li class=&quot;da-circular-stat {fillColor: &#39;#a6d037&#39;, value: 55, maxValue: 98, label: &#39;Seeds Collected&#39;}&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<h5>
+	Complete options reference:</h5>
+<table>
+	<tbody>
+		<tr>
+			<th>
+				Option Name</th>
+			<th>
+				Default</th>
+			<th>
+				Description</th>
+		</tr>
+		<tr>
+			<td>
+				percent</td>
+			<td>
+				false</td>
+			<td>
+				Show the values as percentage</td>
+		</tr>
+		<tr>
+			<td>
+				value</td>
+			<td>
+				0</td>
+			<td>
+				The current value</td>
+		</tr>
+		<tr>
+			<td>
+				maxValue</td>
+			<td>
+				100</td>
+			<td>
+				The maximum value</td>
+		</tr>
+		<tr>
+			<td>
+				duration</td>
+			<td>
+				1000</td>
+			<td>
+				Duration of the animation</td>
+		</tr>
+		<tr>
+			<td>
+				label</td>
+			<td>
+				&#39;&#39; (empty text)</td>
+			<td>
+				The text on the middle</td>
+		</tr>
+		<tr>
+			<td>
+				fillColor</td>
+			<td>
+				#e15656</td>
+			<td>
+				The fill color</td>
+		</tr>
+		<tr>
+			<td>
+				decimals</td>
+			<td>
+				0</td>
+			<td>
+				The number of decimal points to display after the comma</td>
+		</tr>
+	</tbody>
+</table>
+<h4>
+	Form Wizard Plugin</h4>
+<p>
+	<img alt="" src="assets/images/image_17.png"></p>
+<p>
+	This plugin will transform a set of elements into a step-by-step wizard with animated progressbar.</p>
+<p>
+	What this plugin does is hiding the inactive steps, help validating the form before proceeding, add and control the form buttons on the bottom. The progress bar on the top will have a fill animation when progressing through the steps.</p>
+<p>
+	Using this plugin requires you to include the following files:</p>
+<ul>
+	<li>
+		/js/core/plugins/dandelion.wizard.min.js</li>
+	<li>
+		/css/core/wizard.css</li>
+</ul>
+<h5>
+	Example (includes example how to validate the steps):</h5>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/validate/jquery.validate.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/core/plugins/dandelion.wizard.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var v = $(&quot;#da-wizard-form&quot;).validate({ onsubmit: false });
+$(&quot;#da-wizard-form&quot;).daWizard({
+    forwardOnly: false, 
+    onLeaveStep: function(index, elem) {
+        return v.form();
+    }, 
+    onBeforeSubmit: function() {
+        return v.form();
+    }
+});
+&lt;/script&gt;
+
+&lt;form id=&quot;da-wizard-form&quot; class=&quot;da-form&quot;&gt;
+    &lt;fieldset class=&quot;da-form-inline&quot;&gt;
+        &lt;legend&gt;Step One&lt;/legend&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;Username &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;text&quot; name=&quot;username&quot; class=&quot;required&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset class=&quot;da-form-inline&quot;&gt;
+        &lt;legend&gt;Step Two&lt;/legend&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;Email &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;text&quot; name=&quot;email&quot; class=&quot;required email&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset class=&quot;da-form-inline&quot;&gt;
+        &lt;legend&gt;Step Three&lt;/legend&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;Password &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item large&quot;&gt;
+                &lt;input type=&quot;password&quot; name=&quot;password&quot; class=&quot;required&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+<h5>
+	Complete options reference:</h5>
+<table>
+	<tbody>
+		<tr>
+			<th>
+				Option Name</th>
+			<th>
+				Default</th>
+			<th>
+				Description</th>
+		</tr>
+		<tr>
+			<td>
+				element</td>
+			<td>
+				&#39;fieldset&#39;</td>
+			<td>
+				The elements inside the form to treat as form steps</td>
+		</tr>
+		<tr>
+			<td>
+				labelElement</td>
+			<td>
+				&#39;legend&#39;</td>
+			<td>
+				The element inside the steps to treat as step names</td>
+		</tr>
+		<tr>
+			<td>
+				buttonContainerClass</td>
+			<td>
+				&#39;da-button-row&#39;</td>
+			<td>
+				The class name for the button container</td>
+		</tr>
+		<tr>
+			<td>
+				nextButtonClass</td>
+			<td>
+				&#39;da-button red&#39;</td>
+			<td>
+				The class name for the next button</td>
+		</tr>
+		<tr>
+			<td>
+				prevButtonClass</td>
+			<td>
+				&#39;da-button gray left&#39;</td>
+			<td>
+				The class name for the prev button</td>
+		</tr>
+		<tr>
+			<td>
+				submitButtonClass</td>
+			<td>
+				&#39;da-button green&#39;</td>
+			<td>
+				The class name for the submit button</td>
+		</tr>
+		<tr>
+			<td>
+				nextButtonLabel</td>
+			<td>
+				&#39;Next&#39;</td>
+			<td>
+				The text on the next button</td>
+		</tr>
+		<tr>
+			<td>
+				prevButtonLabel</td>
+			<td>
+				&#39;Prev&#39;</td>
+			<td>
+				The text on the prev button</td>
+		</tr>
+		<tr>
+			<td>
+				submitButtonName</td>
+			<td>
+				&#39;dnd-wizard&#39;</td>
+			<td>
+				The name attribute for the submit button</td>
+		</tr>
+		<tr>
+			<td>
+				submitButtonLabel</td>
+			<td>
+				&#39;Submit&#39;</td>
+			<td>
+				The text on the submit button</td>
+		</tr>
+		<tr>
+			<td>
+				forwardOnly</td>
+			<td>
+				true</td>
+			<td>
+				Whether backwards navigation is not allowed</td>
+		</tr>
+		<tr>
+			<td>
+				ajaxSubmit</td>
+			<td>
+				false</td>
+			<td>
+				Whether to enable AJAX form submissions using jquery-form plugin</td>
+		</tr>
+		<tr>
+			<td>
+				ajaxOptions</td>
+			<td>
+				{}</td>
+			<td>
+				The options for jquery-form plugin</td>
+		</tr>
+		<tr>
+			<td>
+				onLeaveStep</td>
+			<td>
+				null</td>
+			<td>
+				The function to call each time leaving a step</td>
+		</tr>
+		<tr>
+			<td>
+				onShowStep</td>
+			<td>
+				null</td>
+			<td>
+				The function to call each time a step is shown</td>
+		</tr>
+		<tr>
+			<td>
+				onBeforeSubmit</td>
+			<td>
+				null</td>
+			<td>
+				The function to call before submitting the form</td>
+		</tr>
+	</tbody>
+</table>
+<h4>
+	PickList Plugin</h4>
+<p>
+	<img alt="" src="assets/images/image_14.png"></p>
+<p>
+	Picklist might sound unfamiliar, even I didn&#39;t know it was the name for such form elements :)</p>
+<p>
+	Picklist which can also be called dual list box, is a form element like displayed on the image above.</p>
+<p>
+	This template includes a custom picklist plugin, a modified and simplified version of jquery-ui-picklist (<a href="http://code.google.com/p/jquery-ui-picklist/">http://code.google.com/p/jquery-ui-picklist/</a>).</p>
+<p>
+	The following are the changes made to this plugin</p>
+<ul>
+	<li>
+		Changed the logic to refer option items by element index instead of element value</li>
+	<li>
+		Removed the option to add rich items</li>
+	<li>
+		Removed the jquery.ui.widget dependency</li>
+	<li>
+		Removed all jquery ui class names</li>
+	<li>
+		Several code optimizations</li>
+	<li>
+		Custom build CSS to match this template&#39;s style</li>
+</ul>
+<p>
+	What this plugin does is converting a usual select element into a picklist element.</p>
+<p>
+	Using this plugin requires you to include the following files:</p>
+<ul>
+	<li>
+		/js/core/plugins/jquery.picklist.min.js</li>
+	<li>
+		/js/core/plugins/jquery.picklist.css</li>
+</ul>
+<h5>
+	Example:</h5>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/core/plugins/picklist/jquery.picklist.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;js/core/plugins/picklist/jquery.picklist.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+(function($) {
+    $(document).ready(function(e) {
+        $(&quot;#da-ex-picklist&quot;).daPickList();
+    });
+}) (jQuery);
+&lt;/script&gt;
+
+&lt;select id=&quot;da-ex-picklist&quot;&gt;
+    &lt;option&gt;Japan&lt;/option&gt;
+    &lt;option&gt;Russia&lt;/option&gt;
+    &lt;option&gt;China&lt;/option&gt;
+    &lt;option&gt;Netherlands&lt;/option&gt;
+    &lt;option&gt;Indonesia&lt;/option&gt;
+    &lt;option&gt;Korea&lt;/option&gt;
+    &lt;option&gt;United States&lt;/option&gt;
+    &lt;option&gt;United Kingdom&lt;/option&gt;
+&lt;/select&gt;</pre>
+<h5>
+	Complete options reference:</h5>
+<p>
+	This plugin has many options, but it&#39;s not recommended to change the default values, so only the simple options are displayed here:</p>
+<table>
+	<tbody>
+		<tr>
+			<th>
+				Option Name</th>
+			<th>
+				Default</th>
+			<th>
+				Description</th>
+		</tr>
+		<tr>
+			<td>
+				addAllLabel</td>
+			<td>
+				&amp;gt;&amp;gt;</td>
+			<td>
+				The move all to the right button text</td>
+		</tr>
+		<tr>
+			<td>
+				addLabel</td>
+			<td>
+				&amp;gt;</td>
+			<td>
+				The move selections to the right button text</td>
+		</tr>
+		<tr>
+			<td>
+				removeAllLabel</td>
+			<td>
+				&amp;lt;&amp;lt;</td>
+			<td>
+				The move all to the left text</td>
+		</tr>
+		<tr>
+			<td>
+				removeLabel</td>
+			<td>
+				&amp;lt;</td>
+			<td>
+				The move selections to the left button text</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	Those were the custom plugins, any bugs or feature request, please contact me and I&#39;ll release an update ASAP :)</p>
+</section>
+<section id="form_styling">
+	<h3>Form Styling</h3><hr class="notop">
+<h4>
+	Form Layouts</h4>
+<ul>
+	<li>
+		Inline form layout, which has labels on the left side of the input</li>
+	<li>
+		Block form layout, which has labels on top of the input</li>
+	<li>
+		Column form layout, which has form inputs divided in columns</li>
+</ul>
+<p>
+	<img alt="" src="assets/images/image_8.png" style="max-width: 100%; "></p>
+<h5>
+	Form HTML Structure:</h5>
+<pre class="highlight">
+&lt;form class=&quot;da-form&quot;&gt;
+    &lt;div class=&quot;da-form-block&quot;&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item&quot;&gt;
+                &lt;textarea&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;da-button-row&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<p>
+	The markup above, will result in a block form layout. To get inline form layout, change</p>
+<pre class="highlight">
+&lt;div class=&quot;da-form-block&quot;&gt;&lt;/div&gt;
+</pre>
+<p>
+	to</p>
+<pre class="highlight">
+&lt;div class=&quot;da-form-inline&quot;&gt;&lt;/div&gt;</pre>
+<p>
+	By not wrapping the form rows with either&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-form-block</span>&nbsp;&nbsp;or&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-form-inline</span>, the form will be a block form, which is the default layout.</p>
+<h4>
+	Columned Forms</h4>
+<p>
+	This is a form layout that divides a row into eight equal sized grids. These grids can be combined, thus creating columns with a width of 1/8, 2/8, 3/8, 4/8, 5/8, 6/8, 7/8, and 8/8 of its container.</p>
+<p>
+	<img alt="" src="assets/images/image_9.png" style="max-width: 100%; "></p>
+<p>
+	Using this layout can be done by appending one of the following classes into a form row:</p>
+<ul>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-1-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-2-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-3-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-4-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-5-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-6-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-7-8</span></li>
+	<li>
+		<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-form-col-8-8</span></li>
+</ul>
+<p>
+	<strong>Notes:</strong></p>
+<p>
+	For the first column in a row, you should put an additional class name,&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.alpha</span>&nbsp;that indicates that this is the first column in a row, so removing the left margin.</p>
+<p>
+	For the last column in a row, you should put an additional class name,&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.omega</span>&nbsp;that indicates that this is the last column in a row, so removing the right margin.</p>
+<pre class="highlight">
+&lt;div class=&quot;da-form-row&quot;&gt;
+    &lt;div class=&quot;da-form-col-3-8 alpha&quot;&gt;
+        &lt;label&gt;Form Col 3 - 8&lt;/label&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;da-form-col-3-8&quot;&gt;
+        &lt;label&gt;Form Col 3 - 8&lt;/label&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;da-form-col-2-8 omega&quot;&gt;
+        &lt;label&gt;Form Col 2 - 8&lt;/label&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<h4>
+	Fieldsets</h4>
+<p>
+	You can also wrap the form in a <span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">&lt;fieldset&gt;&lt;/fieldset&gt;</span>&nbsp;instead of a <span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">&lt;div&gt;&lt;/div&gt;</span></p>
+<pre class="highlight">
+&lt;form class=&quot;da-form&quot;&gt;
+    &lt;fieldset class=&quot;da-form-block&quot;&gt;
+        &lt;legend&gt;Form Legend&lt;/legend&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item&quot;&gt;
+                &lt;textarea&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;div class=&quot;da-button-row&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<h4>
+	Mixing Block and Inline Form</h4>
+<p>
+	You can have a form with mixed layouts by just giving a form row the class <span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-form-block</span>&nbsp;&nbsp;or&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-form-inline</span><strong>.</strong></p>
+<pre class="highlight">
+&lt;form class=&quot;da-form&quot;&gt;
+    &lt;div class=&quot;da-form-row da-form-block&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;da-form-row da-form-inline&quot;&gt;&lt;/div&gt;
+&lt;/form&gt;</pre>
+<h4>
+	Form Input Size</h4>
+<p>
+	Form inputs can have three sizes, small, default and large. default is the default size for form inputs.</p>
+<p>
+	You can control the input size by giving the class attribute&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.small</span><strong>,&nbsp;</strong><span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.default</span>&nbsp;<strong>, or&nbsp;</strong><span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.large</span>&nbsp;&nbsp;to the form item wrapper.</p>
+<pre class="highlight">
+&lt;div class=&quot;da-form-item large&quot;&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+&lt;/div&gt;</pre>
+<p>
+	For default sized form elements, you don&#39;t need to specify a class name.</p>
+<h4>
+	Form List</h4>
+<p>
+	You can create a vertical or horizontal list of form elements like radio buttons, checkboxes and even text fields using unordered list with the class name&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-form-list</span></p>
+<pre class="highlight">
+&lt;form class=&quot;da-form&quot;&gt;
+    &lt;div class=&quot;da-form-block&quot;&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;div class=&quot;da-form-item&quot;&gt;
+                &lt;ul class=&quot;da-form-list&quot;&gt;
+                    &lt;li&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt; &lt;label&gt;Male&lt;/label&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt; &lt;label&gt;Female&lt;/label&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;da-button-row&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<p>
+	An inline, horizontal list can be created by giving an additional class name,&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.inline</span>&nbsp;&nbsp;to the unordered list.</p>
+<pre class="highlight">
+&lt;ul class=&quot;da-form-list inline&quot;&gt;&lt;/ul&gt;
+</pre>
+<h4>
+	Form Input Styling</h4>
+<p>
+	Styling the form inputs doesn&#39;t require you to add any class attribute, every input element inside a&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-form</span>&nbsp;tag will get styled.</p>
+<h4>
+	Form Notes</h4>
+<p>
+	Form notes are short descriptions that can be put above any form element.</p>
+<p>
+	<img alt="" src="assets/images/image_13.png"></p>
+<p>
+	To define a form note, we should declare a &nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">&lt;div&gt;&lt;/div&gt;</span>, a<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">&lt;span&gt;&lt;/span&gt;,</span>&nbsp;or any plain element with the class name <span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.formNote</span>&nbsp;above the form input:</p>
+<h5>
+	Example:</h5>
+<pre class="highlight">
+&lt;form class=&quot;da-form&quot;&gt;
+    &lt;div class=&quot;da-form-block&quot;&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;Text Input&lt;/label&gt;
+            &lt;div class=&quot;da-form-item&quot;&gt;
+                &lt;span class=&quot;formNote&quot;&gt;This is a form note&lt;/span&gt;
+                &lt;input type=&quot;text&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<h4>
+	Inline Error Message</h4>
+<p>
+	Form error message can also be displayed inline below the form element.</p>
+<p>
+	<img alt="" src="assets/images/image_5.png"></p>
+<p>
+	To define an inline error message,&nbsp;we should declare a &nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">&lt;div&gt;&lt;/div&gt;</span>, a<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">&lt;span&gt;&lt;/span&gt;,</span>&nbsp;or any plain element with the class&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.errorMessage</span>&nbsp;below the form input:</p>
+<pre class="highlight">
+&lt;form class=&quot;da-form&quot;&gt;
+    &lt;div class=&quot;da-form-block&quot;&gt;
+        &lt;div class=&quot;da-form-row&quot;&gt;
+            &lt;label&gt;Text Input&lt;/label&gt;
+            &lt;div class=&quot;da-form-item&quot;&gt;
+                &lt;input type=&quot;text&quot; /&gt;
+                &lt;span class=&quot;errorMessage&quot;&gt;This is an error message&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+<h4>
+	Form Message</h4>
+<p>
+	Form messages can be an info message, an error message, a warning message and a success message.</p>
+<p>
+	<img alt="" src="assets/images/image_10.png" style="width: 320px; height: 269px; "></p>
+<p>
+	The base css class for all messages is&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-message</span>, just add&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.success</span><strong>,&nbsp;</strong><span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.error</span>&nbsp;<strong>,&nbsp;</strong><span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.info</span>&nbsp;<strong>, </strong>or&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.warning</span>&nbsp;&nbsp;to get different form messages.</p>
+<h5>
+	HTML structure:</h5>
+<pre class="highlight">
+&lt;div class=&quot;da-message error&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;da-message success&quot;&gt;&lt;/div&gt;</pre>
+<h4>
+	Styling File Inputs</h4>
+<p>
+	Sytyling file inputs works directly from the template, but you still needs you to include the necessary javascript file.</p>
+<p>
+	File input styles are already integrated into the core css stylesheets, so no need to include any additional css files. Styling can be done by specifying the class&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); text-align: left; ">.da-custom-file</span>&nbsp;to a file input element, and it will automatically get styled.</p>
+<p>
+	<img alt="" src="assets/images/image_6.png"></p>
+<p>
+	Example:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.fileinput.js&quot;&gt;&lt;/script&gt;
+
+&lt;input type=&quot;file&quot; class=&quot;da-custom-file&quot; /&gt;</pre>
+<p>
+	The example above assumes you already included this template&#39;s core script.</p>
+</section>
+<section id="button_styling">
+	<h3>Button Styling</h3><hr class="notop">
+<p>
+	<img alt="" src="assets/images/image_2.png"></p>
+<p>
+	Buttons are styled with CSS3 to be interactive and good looking.</p>
+<ul>
+	<li>
+		There are 6 button colors
+		<ul>
+			<li>
+				<strong><span style="color:#E15656">Red</span></strong></li>
+			<li>
+				<strong><span style="color: #A7D037; ">Green</span></strong></li>
+			<li>
+				<strong><span style="color: #61A4E4; ">Blue</span></strong></li>
+			<li>
+				<strong><span style="color: #EA799B; ">Pink</span></strong></li>
+			<li>
+				<strong><span style="color: #FAB341; ">Orange</span></strong></li>
+			<li>
+				<strong><span style="color: #E3E3E3; ">Gray</span></strong></li>
+		</ul>
+	</li>
+	<li>
+		You can always add new colors by editing /<strong>css/core/buttons.css</strong></li>
+	<li>
+		To get the button style, just add the css class <span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.da-button</span>, to any clickable element you want like&nbsp;<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">&lt;a&gt;&lt;/a&gt;, &lt;button&gt;&lt;/button&gt;, &lt;input /&gt;</span></li>
+	<li>
+		There are three different button sizes: <strong>large, medium (default)&nbsp;</strong>and<strong> small</strong></li>
+	<li>
+		Icons in buttons can only be done on&nbsp;<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">&lt;a&gt;&lt;/a&gt;</span> and <span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">&lt;button&gt;&lt;/button&gt;</span> tags, to put icons on&nbsp;<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">&lt;input /&gt;</span> tags, you should define your own css class which sets an icon as its background-image</li>
+</ul>
+<h5>
+	Example:</h5>
+<pre class="highlight">
+&lt;button class=&quot;da-button red small&quot;&gt;Click Me!&lt;/button&gt;
+&lt;input type=&quot;submit&quot; class=&quot;da-button blue&quot; value=&quot;Submit&quot; /&gt;</pre>
+<p>&nbsp;
+	</p>
+</section>
+<section id="jquery_ui_widgets">
+	<h3>jQuery-UI Widgets</h3><hr class="notop">
+<p>
+	This templates include the full set of jquery-ui widgets, all fully styled to match this template&#39;s style:</p>
+<ul>
+	<li>
+		Progressbar (four colors included, animated using CSS3)</li>
+	<li>
+		Sliders (four colors included)</li>
+	<li>
+		Datepicker</li>
+	<li>
+		Dialogs</li>
+	<li>
+		Buttonsets</li>
+	<li>
+		Tabs</li>
+	<li>
+		Accordions</li>
+</ul>
+<p>
+	Besides the core jquery-ui widgets, there are also two jquery-ui addon plugins included:</p>
+<ul>
+	<li>
+		jquery-ui time picker addon</li>
+	<li>
+		jquery-ui spinner, an unreleased jquery-ui widget planned for release on jquery-ui 1.9</li>
+</ul>
+<p>
+	To use the jquery-ui widgets, make sure to include the jquery-ui javascript files, along with its dependencies.</p>
+<pre class="highlight">
+&lt;!-- jQuery JavaScript File --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- jQuery-UI JavaScript Files --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jui/js/jquery-ui-1.8.20.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jui/js/jquery.ui.timepicker.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jui/js/jquery.ui.touch-punch.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jui/css/jquery.ui.all.css&quot; media=&quot;screen&quot; /&gt;</pre>
+<p>
+	Progressbar and Slider color&#39;s can be customized by giving the elements a class name:</p>
+<ul>
+	<li style="text-align: left;">
+		<span style="background-color: rgb(239, 239, 239); ">.red</span>&nbsp;for a red slider or progressbar</li>
+	<li style="text-align: left;">
+		<span style="background-color: rgb(239, 239, 239); ">.green</span>&nbsp;for a green slider or progressbar</li>
+	<li style="text-align: left;">
+		<span style="background-color: rgb(239, 239, 239); ">.blue</span>&nbsp;for a blue slider or progressbar</li>
+	<li style="text-align: left;">
+		<span style="background-color: rgb(239, 239, 239); ">.orange</span>&nbsp;for a orange slider or progressbar</li>
+	<li style="text-align: left;">
+		<span style="background-color: rgb(239, 239, 239); ">.animated</span>&nbsp;for animated progressbars</li>
+</ul>
+<p>
+	<span style="text-align: left; ">Full documentation and demo examples can be found on </span><a href="http://jqueryui.com/" style="text-align: left; ">jquery-ui</a><span style="text-align: left; ">&#39;s official website.</span></p>
+</section>
+<section id="external_plugins">
+	<h3>External Plugins</h3><hr class="notop">
+<p>
+	There are 18 plugins included in this template:</p>
+<ul>
+	<li>
+		jquery chosen plugin for styling select inputs</li>
+	<li>
+		jquery colorpicker plugin</li>
+	<li>
+		jquery datatables plugin, an extensive, rock solid table plugin</li>
+	<li>
+		jquery elastic plugin, for auto growing textareas</li>
+	<li>
+		elfinder for easy file management</li>
+	<li>
+		elrte, a WYSIWYG text editor</li>
+	<li>
+		fullcalendar, calendar plugin</li>
+	<li>
+		jgrowl, Mac OS X notification style plugin</li>
+	<li>
+		photoswipe, a gallery plugin optimized for touch devices</li>
+	<li>
+		placeholder plugin, a fallback for placeholders on non HTML5 browsers</li>
+	<li>
+		plupload, a file uploading plugin</li>
+	<li>
+		prettyphoto, an image displaying plugin</li>
+	<li>
+		prettycheckboxes, a checkbox and radio button replacement plugin</li>
+	<li>
+		syntaxhighligter, a plugin that outputs beautiful syntax highlighting</li>
+	<li>
+		jquery tipsy, a tooltip plugin</li>
+	<li>
+		jquery validate plugin</li>
+	<li>
+		Flot Charting Library</li>
+	<li>
+		iOS Button</li>
+</ul>
+<p>
+	All plugins are styled to work together with this template, so using the provided css files is recommended.</p>
+<h4>
+	Chosen Plugin For Styling Select Inputs</h4>
+<p>
+	Chosen is a JavaScript plugin that makes long, unwieldy select boxes much more user-friendly. It is currently available in both jQuery and Prototype flavors.</p>
+<p>
+	To use this plugin you need to add the necessary javascript and css files, add the necessary class name to your select inputs, and activate it.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/chosen/chosen.jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/chosen/chosen.css&quot; media=&quot;screen&quot; /&gt;
+
+$(document).ready(function() {
+    $(&quot;select.chzn-select&quot;).chosen();
+});
+
+&lt;select class=&quot;chzn-select&quot;&gt;&lt;/select&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://harvesthq.github.com/chosen/">http://harvesthq.github.com/chosen/</a></p>
+<h4>
+	Colorpicker Plugin</h4>
+<p>
+	Colorpicker is jQuery plugin by <a href="http://www.eyecon.ro/colorpicker/">eyecon</a>, it&#39;s a simple component to select color in the same way you select color in Adobe Photoshop.</p>
+<p>
+	To use colorpicker, you have to attach the necessary javascript and css files</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/colorpicker/colorpicker.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/colorpicker/colorpicker.css&quot; /&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.eyecon.ro/colorpicker/">http://www.eyecon.ro/colorpicker/</a></p>
+<h4>
+	DataTables Plugin, an Extensive, Rock Solid Table Plugin</h4>
+<p>
+	DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, which will add advanced interaction controls to any HTML table.</p>
+<p>
+	To use datatables, you need to attach the necessary javascript files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/datatables/jquery.dataTables.min.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	Because data table styles is integrated with the core table styles, you don&#39;t need to add any additional stylesheets.</p>
+<p>
+	For more info about data table, please visit&nbsp;<a href="http://datatables.net/">http://datatables.net/</a></p>
+<h4>
+	Elastic Plugin, for Autogrowing Textareas</h4>
+<p>
+	Elastic makes your textareas grow and shrink to fit it&rsquo;s content. It was inspired by the auto growing textareas on Facebook. The major difference between Elastic and it&rsquo;s competitors is it&rsquo;s weight.</p>
+<p>
+	To use elastic, you need to attach the necessary javascript files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/elastic/jquery.elastic.min.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://unwrongest.com/projects/elastic/">http://unwrongest.com/projects/elastic/</a></p>
+<h4>
+	elFinder for Easy File Management</h4>
+<p>
+	elFinder&nbsp;is an open-source file manager for web, written in JavaScript using jQuery UI. As you can see its creation is inspired by simplicity and convenience of Finder program used in Mac OS X operating system.</p>
+<p>
+	To use elFinder, you&#39;ll have to attach jQuery-UI, the necessary javascript and css files, and configure it to your liking.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jui/js/jquery-ui-1.8.20.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/elfinder/js/elfinder.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jui/css/jquery.ui.all.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/elfinder/css/elfinder.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function() {
+        $(&quot;#elfinder&quot;).elfinder({
+            url : &#39;plugins/elfinder/connectors/php/connector.php&#39;,&nbsp;
+            lang : &#39;en&#39;,
+            docked : true,
+            height: 300
+        });
+    });
+&lt;/script&gt;
+
+&lt;div id=&quot;elfinder&quot;&gt;&lt;/div&gt;</pre>
+<p>
+	elFinder also requires a connector to communicate with the server. There are two connectors included in elFinder, one for <strong>PHP </strong>and one for <strong>python</strong>. This connector is configured via the &quot;url&quot; option of the plugin (see above).</p>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://elrte.org/elfinder">http://elrte.org/elfinder</a></p>
+<h4>
+	elRTE, a WYSIWYG Text Editor</h4>
+<p>
+	elRTE is an open-source WYSIWYG HTML-editor written in JavaScript using jQuery UI. It features rich text editing, options for changing its appearance, style and many more.</p>
+<p>
+	To use elRTE, you&#39;ll have to attach jQuery-UI, the necessary javascript and css files, and configure it to your liking.</p>
+<div>
+	<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jui/js/jquery-ui-1.8.20.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/elrte/js/elrte.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/elrte/css/elrte.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var opts = {
+        cssClass : &#39;el-rte&#39;,
+        height &nbsp; : 300,
+        toolbar &nbsp;: &#39;normal&#39;,
+        cssfiles : [&#39;plugins/elrte/css/elrte-inner.css&#39;]
+    };
+    $(&#39;#elrte&#39;).elrte(opts); 
+&lt;/script&gt;
+
+&lt;div id=&quot;elrte&quot;&gt;&lt;/div&gt;</pre>
+</div>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://elrte.org/elfinder">http://elrte.org/</a></p>
+<h4>
+	Fullcalendar, a Calendar Plugin</h4>
+<p>
+	FullCalendar is a jQuery plugin that provides a full-sized, drag &amp; drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format (an extension is provided for Google Calendar).</p>
+<p>
+	To use full calendar you need to attach the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/fullcalendar/fullcalendar.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/fullcalendar/fullcalendar.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/fullcalendar/fullcalendar.print.css&quot; media=&quot;print&quot; /&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></p>
+<h4>
+	jGrowl, Mac OS X Notification Style Plugin</h4>
+<p>
+	jGrowl is an unobtrusive notification system for web applications, similar to Growl for Mac OS X. The idea is simple, deliver notifications to the end user in a noticeable way that doesn&#39;t obstruct the work flow and yet keeps the user informed.</p>
+<p>
+	To use jGrowl, you need to attach the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/jgrowl/jquery.jgrowl.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/jgrowl/jquery.jgrowl.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+     $.jGrowl(&quot;Hello World!&quot;, {position: &quot;bottom-right&quot;});
+&lt;/script&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="https://bitbucket.org/stanlemon/jgrowl">https://bitbucket.org/stanlemon/jgrowl</a></p>
+<h4>
+	Photoswipe, a Gallery Plugin Optimized for Touch Devices</h4>
+<p>
+	PhotoSwipe is a FREE HTML/CSS/JavaScript based image gallery specifically targeting mobile devices.</p>
+<p>
+	This plugin provides your visitors a familiar and intuitive interface allowing them to interact with images on your mobile website.</p>
+<p>
+	To use Photoswipe, you need to attach the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/photoswipe/js/code.photoswipe.jquery-3.0.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/photoswipe/css/photoswipe.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+(function($) {
+    $(document).ready(function(e) {
+        $(&quot;.gallery a&quot;).photoSwipe();
+    });
+}) (jQuery);
+&lt;/script&gt;
+
+&lt;ul class=&quot;gallery&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;your-image-url&quot;&gt;&lt;img src=&quot;your-thumb-url&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<p>
+	More info about this plugin can be found here:&nbsp;<a href="http://www.photoswipe.com/">http://www.photoswipe.com/</a></p>
+<h4>
+	Placeholder</h4>
+<p>
+	Input placeholder is a jquery plugin that helps non HTML5 browsers to support placeholders.</p>
+<p>
+	Since placeholder suppport is already integrated into this template, all you need to do is add the required javascript file, and define placeholder attribute at your form elements.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.placeholder.js&quot;&gt;&lt;/script&gt;</pre>
+<h4>
+	PLUpload, a File Uploading Plugin</h4>
+<p>
+	The developers of TinyMCE brings you Plupload, a highly usable upload handler for your Content Management Systems or similar. Plupload is currently separated into a Core API and a jQuery upload queue widget this enables you to either use it out of the box or write your own custom implementation.</p>
+<p>
+	To use plupload, you need to attach the necessary javascript and css files, configure your backend and initialize the plugin.</p>
+<div>
+	<div>
+		<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.flash.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.html4.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/plupload.html5.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/plupload/jquery.plupload.queue.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready(function() {
+        $(&quot;#uploader&quot;).pluploadQueue({
+            // General settings
+            runtimes : &#39;html4, html5&#39;,&nbsp;
+            url : &#39;../upload.php&#39;,
+            max_file_size : &#39;1000mb&#39;,
+            max_file_count: 20, // user can add no more then 20 files at a time
+            chunk_size : &#39;1mb&#39;,
+            unique_names : true,
+            multiple_queues : true,
+            // Resize images on clientside if we can
+            resize : {width : 320, height : 240, quality : 90},
+            // Rename files by clicking on their titles
+            rename: true,
+            // Sort files
+            sortable: true,
+            // Specify what files to browse for
+            filters : [
+                {title : &quot;Image files&quot;, extensions : &quot;jpg,gif,png&quot;},
+                {title : &quot;Zip files&quot;, extensions : &quot;zip,avi&quot;}
+            ]
+        });
+    });
+&lt;/script&gt;
+&lt;div id=&quot;uploader&quot;&gt;
+    &lt;p&gt;You browser doesn&#39;t have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.&lt;/p&gt;
+&lt;/div&gt;</pre>
+	</div>
+</div>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.plupload.com/">http://www.plupload.com/</a></p>
+<h4>
+	prettyPhoto, an Image Displaying Plugin</h4>
+<p>
+	<strong>prettyPhoto&nbsp;</strong>is a jQuery lightbox clone. Not only does it support images, it also support for videos, flash, YouTube, iframes and ajax. It&rsquo;s a full blown media lightbox. It is very easy to setup, yet very flexible if you want to customize it a bit. Plus the script is compatible in every major browser, even IE6.</p>
+<p>
+	To use this plugin you need to add the necessary javascript and css files:</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/prettyphoto/js/jquery.prettyPhoto-min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/prettyphoto/css/prettyPhoto.css&quot; /&gt;
+
+$(document).ready(function(){
+    $(&quot;a[rel^=&#39;prettyPhoto&#39;]&quot;).prettyPhoto();
+});
+
+&lt;a href=&quot;sample.jpg&quot; rel=&quot;prettyPhoto&quot;&gt;&lt;img src=&quot;sample.jpg alt=&quot;Sample&quot; /&gt;&lt;/a&gt;</pre>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></p>
+<h4>
+	SyntaxHighligter, a Plugin That Outputs Beautiful Syntax Highlighting</h4>
+<p>
+	This plugin is jQuery Extension for <a href="http://code.google.com/p/google-code-prettify/">Google&#39;s Prettify Syntax Highlighter</a></p>
+<p>
+	Using this on your site requires you to add the necessary javascript and css files.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/syntaxhighlighter/prettify/prettify.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/syntaxhighlighter/prettify/prettify.min.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/syntaxhighlighter/jquery.syntaxhighlighter.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/syntaxhighlighter/styles/style.min.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/syntaxhighlighter/styles/theme-balupton.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;plugins/syntaxhighlighter/styles/theme-google.css&quot; media=&quot;screen&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+(function($) {
+    $(document).ready(function(e) {
+        if($.SyntaxHighlighter) {
+            $.SyntaxHighlighter.init({
+                alternateLines: true
+            });
+        }
+    });
+})(jQuery);
+&lt;/script&gt;
+</pre>
+<p>
+	To highlight our code and auto-detect the language, we would simply add the classname&nbsp;<span style="color: rgb(85, 85, 85); text-align: left; background-color: rgb(239, 239, 239); ">.highlight</span>&nbsp;to our code block, and it will automatically get styled.</p>
+<pre class="highlight">
+&lt;pre claas=&quot;highlight&quot;&gt;
+var self = this;
+&lt;/pre&gt;</pre>
+<p>
+	More info about this plugin can be found here:&nbsp;<a href="https://github.com/balupton/jquery-syntaxhighlighter">https://github.com/balupton/jquery-syntaxhighlighter</a></p>
+<p>
+	<strong>Note: </strong>Live examples for this plugin is this documentation :)</p>
+<h4>
+	Tipsy, a Tooltip Plugin</h4>
+<p>
+	Tipsy is a jQuery plugin for creating a Facebook-like tooltips effect based on an anchor tag&#39;s title attribute.</p>
+<p>
+	This template integrates tooltips internally, so you only need to add the necessary javascript and css files and define the right css class for each element.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/tipsy/jquery.tipsy.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;plugins/tipsy/tipsy.css&quot; media=&quot;screen&quot; /&gt;</pre>
+<p>
+	This template has eight build in classes, just add one on your element, and that element will display the tooltip when hovered.</p>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%; ">
+	<tbody>
+		<tr>
+			<td>
+				.da-tooltip-nw</td>
+			<td>
+				.da-tooltip-n</td>
+			<td>
+				.da-tooltip-ne</td>
+		</tr>
+		<tr>
+			<td>
+				.da-tooltip-w</td>
+			<td>&nbsp;
+				</td>
+			<td>
+				.da-tooltip-e</td>
+		</tr>
+		<tr>
+			<td>
+				.da-tooltip-sw</td>
+			<td>
+				.da-tooltip-s</td>
+			<td>
+				.da-tooltip-se</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://onehackoranother.com/projects/jquery/tipsy/">http://onehackoranother.com/projects/jquery/tipsy/</a></p>
+<h4>
+	Validation Plugin</h4>
+<p>
+	Form validation on this template is based on the jquery validate plugin, one of the most popular jquery validation plugin available.</p>
+<pre class="highlight">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;plugins/validate/jquery.validate.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	To use the validation plugin, just add the javascript file, and define the correct class names to your form elements.</p>
+<p>
+	For more info about this plugin, please visit&nbsp;<a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></p>
+</section>
+<section id="faq">
+	<h3>FAQ</h3><hr class="notop">
+<h4>
+	How do I make a dropdown menu that&rsquo;s always closed by default on the main navigation on the left?</h4>
+<p>
+	Easy, just add the class &ldquo;closed&rdquo; to the second level ul tag of the menu.</p>
+<h5>
+	Example:</h5>
+<pre class="highlight">
+&lt;ul class=&quot;closed&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;grids.html&quot;&gt;Grids and Panels&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;typography.html&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<h4>
+	How do I change the template&#39;s layout mode between fluid and fixed?</h4>
+<p>
+	Please refer to sub-section&nbsp;<strong>Page Title, Main Wrapper and Logo</strong> from <a href="#building_the_base_html">Building The Base HTML</a> section for more detailed explanation.</p>
+<p>
+	Please look for a&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">&lt;div&gt;&lt;/div&gt;</span>&nbsp;tag with the id&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">#da-wrapper</span>, it might be located on top directly or not far after the opening&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">&lt;body&gt;&lt;/body&gt;</span>&nbsp;tag.&nbsp;This is the point where we need to decide whether our template will have a fixed or fluid width by default. Give this&nbsp;<span style="background-color: rgb(239, 239, 239); color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; ">#da-wrapper</span>&nbsp;div a class name:&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.fixed</span>&nbsp;for fixed layout, or&nbsp;<span style="color: rgb(85, 85, 85); font-family: monospace; text-align: left; white-space: pre; background-color: rgb(239, 239, 239); ">.fluid</span>&nbsp;for fluid layout mode.</p>
+<pre class="highlight">
+&lt;body&gt;
+    &lt;!--
+        Main Wrapper. 
+        Set this to &#39;fixed&#39; for fixed layout and &#39;fluid&#39; for fluid layout&#39;
+    --&gt;
+    &lt;div id=&quot;da-wrapper&quot; class=&quot;fluid&quot;&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</pre>
+<p>&nbsp;
+	</p>
+</section>
+<section id="changelog">
+	<h3>Changelog</h3><hr class="notop">
+<h4>
+	Version 1.2 (07/25/2012)</h4>
+<p>&nbsp;
+	</p>
+<ul>
+	<li>
+		Added decimal point option on circular plugin</li>
+	<li>
+		improved elRTE stylesheet to not override jquery-ui styles</li>
+	<li>
+		Added submitButtonName option on Wizard Plugin</li>
+	<li>
+		Added reset functionality on Wizard Plugin</li>
+	<li>
+		Added AJAX submit option on Wizard Plugin</li>
+	<li>
+		Added iOS style radio and checkbox plugin</li>
+	<li>
+		Fixed the overflowing Wizard Navigation progress width</li>
+</ul>
+<p>&nbsp;
+	</p>
+<h4>
+	Version 1.1 (06/11/2012)</h4>
+<ul>
+	<li>
+		Optimize the image size on gallery page</li>
+	<li>
+		Fixed apple-touch-icon missing image</li>
+	<li>
+		Login box and its error message is now responsive</li>
+	<li>
+		Replaced Google Visualization library with Flot due to lack of support on Android prior to version 3.1</li>
+	<li>
+		Added prettyCheckboxes plugin</li>
+	<li>
+		Made the table outside scrollable panels responsive</li>
+	<li>
+		Fixed a display bug on toolbar panel</li>
+	<li>
+		Removed the statistic widget page</li>
+</ul>
+<h4>
+	Version 1.0 (05/22/2012)</h4>
+<ul>
+	<li>
+		Initial Release</li>
+</ul>
+</section>
+<section id="credits">
+	<h3>Credits</h3><hr class="notop">
+<h4>
+	Icons</h4>
+<ul>
+	<li>
+		IconSweets - <a href="http://www.yummgum.com">http://www.yummgum.com</a></li>
+	<li>
+		Led Icons - <a href="http://led24.de/iconset/">http://led24.de/iconset/</a></li>
+</ul>
+<h4>
+	Gallery Images</h4>
+<ul>
+	<li>
+		<a href="http://photodune.net/item/orchid-flower/1379221">http://photodune.net/item/orchid-flower/1379221</a></li>
+	<li>
+		<a href="http://photodune.net/item/tigon-flower/1668129">http://photodune.net/item/tigon-flower/1668129</a></li>
+	<li>
+		<a href="http://photodune.net/item/tigon-flower/1668130">http://photodune.net/item/tigon-flower/1668130</a></li>
+	<li>
+		<a href="http://photodune.net/item/yellow-apricot-blossom/1372934">http://photodune.net/item/yellow-apricot-blossom/1372934</a></li>
+	<li>
+		<a href="http://photodune.net/item/mountain-flowers/1054931">http://photodune.net/item/mountain-flowers/1054931</a></li>
+	<li>
+		<a href="http://photodune.net/item/yellow-apricot-blossom-3/1336781">http://photodune.net/item/yellow-apricot-blossom-3/1336781</a></li>
+	<li>
+		<a href="http://photodune.net/item/dahlia/1543527">http://photodune.net/item/dahlia/1543527</a></li>
+	<li>
+		<a href="http://photodune.net/item/blossoming/1125633">http://photodune.net/item/blossoming/1125633</a></li>
+	<li>
+		<a href="http://photodune.net/item/blossoming/1148527">http://photodune.net/item/blossoming/1148527</a></li>
+	<li>
+		<a href="http://photodune.net/item/water-lily/983545">http://photodune.net/item/water-lily/983545</a></li>
+	<li>
+		<a href="http://photodune.net/item/flowers/2275760">http://photodune.net/item/flowers/2275760</a></li>
+	<li>
+		<a href="http://photodune.net/item/flowers/2171169">http://photodune.net/item/flowers/2171169</a></li>
+	<li>
+		<a href="http://photodune.net/item/flowers/2201731">http://photodune.net/item/flowers/2201731</a></li>
+	<li>
+		<a href="http://photodune.net/item/flowers/2168477">http://photodune.net/item/flowers/2168477</a></li>
+	<li>
+		<a href="http://photodune.net/item/helipterum/1118036">http://photodune.net/item/helipterum/1118036</a></li>
+	<li>
+		<a href="http://photodune.net/item/multicolored-violet-flowers/1491058">http://photodune.net/item/multicolored-violet-flowers/1491058</a></li>
+	<li>
+		<a href="http://photodune.net/item/tulips/1981642">http://photodune.net/item/tulips/1981642</a></li>
+	<li>
+		<a href="http://photodune.net/item/flowers/2275760">http://photodune.net/item/flowers/2275760</a></li>
+</ul>
+<h4>
+	Graphics</h4>
+<ul>
+	<li>
+		Error page hanger design from <a href="http://www.pixeden.com/psd-web-elements/hanging-note-sign-psd">PixEden</a></li>
+</ul>
+<h4>
+	Plugins and JavaScript Files</h4>
+<ul>
+	<li>
+		jquery chosen plugin /&nbsp;<a href="http://harvesthq.github.com/chosen/">http://harvesthq.github.com/chosen/</a></li>
+	<li>
+		jquery colorpicker plugin /&nbsp;<a href="http://www.eyecon.ro/colorpicker/">http://www.eyecon.ro/colorpicker/</a></li>
+	<li>
+		jquery datatables plugin /&nbsp;<a href="http://www.datatables.net/">http://www.datatables.net/</a></li>
+	<li>
+		jquery elastic plugin /&nbsp;<a href="http://unwrongest.com/projects/elastic/">http://unwrongest.com/projects/elastic/</a></li>
+	<li>
+		elfinder for easy file management /&nbsp;<a href="http://elfinder.org/">http://elfinder.org/</a></li>
+	<li>
+		elrte, a WYSIWYG text editor /&nbsp;<a href="http://elrte.org/">http://elrte.org/</a></li>
+	<li>
+		fullcalendar, calendar plugin /&nbsp;<a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></li>
+	<li>
+		jgrowl, Mac OS X notification style plugin /&nbsp;<a href="http://stanlemon.net/pages/jgrowl">http://stanlemon.net/pages/jgrowl</a></li>
+	<li>
+		photoswipe, a gallery plugin optimized for touch devices /&nbsp;<a href="http://www.photoswipe.com/">http://www.photoswipe.com/</a></li>
+	<li>
+		placeholder plugin, a fallback for placeholders on non HTML5 browsers</li>
+	<li>
+		plupload, a file uploading plugin /&nbsp;<a href="http://www.plupload.com/">http://www.plupload.com/</a></li>
+	<li>
+		prettyphoto, an image displaying plugin /&nbsp;<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></li>
+	<li>
+		syntaxhighligter, a plugin that outputs beautiful syntax highlighting /&nbsp;<a href="https://github.com/balupton/jquery-syntaxhighlighter">https://github.com/balupton/jquery-syntaxhighlighter</a></li>
+	<li>
+		jquery tipsy, a tooltip plugin /&nbsp;<a href="http://onehackoranother.com/projects/jquery/tipsy/">http://onehackoranother.com/projects/jquery/tipsy/</a></li>
+	<li>
+		jquery validate plugin /&nbsp;<a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+	<li>
+		jquery-ui spinner /&nbsp;<a href="https://github.com/btburnett3/jquery.ui.spinner">https://github.com/btburnett3/jquery.ui.spinner</a></li>
+	<li>
+		jquery-ui /&nbsp;<a href="http://jqueryui.com/">http://jqueryui.com/</a></li>
+	<li>
+		jquery iOS Button Plugin /&nbsp;<a href="http://www.givainc.com/labs/ibutton_jquery_plugin.htm">http://www.givainc.com/labs/ibutton_jquery_plugin.htm</a></li>
+	<li>
+		jquery JavaScript library /&nbsp;<a href="http://jquery.com/">http://jquery.com/</a></li>
+	<li>
+		TinyScrollbar plugin /&nbsp;<a href="http://www.baijs.nl/tinyscrollbar/">http://www.baijs.nl/tinyscrollbar/</a></li>
+	<li>
+		jquery debouncedresize /&nbsp;<a href="https://github.com/louisremi/jquery-smartresize">https://github.com/louisremi/jquery-smartresize</a></li>
+	<li>
+		ExplorerCanvas (excanvas) /&nbsp;<a href="http://excanvas.sourceforge.net/">http://excanvas.sourceforge.net/</a></li>
+	<li>
+		jquery metadata /&nbsp;<a href="https://github.com/jquery/jquery-metadata">https://github.com/jquery/jquery-metadata</a></li>
+	<li>
+		jquery fileinput /&nbsp;<a href="https://github.com/filamentgroup/jQuery-Custom-File-Input">https://github.com/filamentgroup/jQuery-Custom-File-Input</a></li>
+</ul>
+</section>
+
+	</div>
+</body>
+</html>

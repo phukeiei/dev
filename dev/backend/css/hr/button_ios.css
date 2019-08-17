@@ -1,0 +1,77 @@
+/* (Chain) Chaiwat Rojjarroenviwat 
+ * Create 10 Jan,2018 
+ * CSS Button for iOS 
+ * Example : <input type="button" class="btnios btnios_default" name="button" value="button">
+			<button  class="btnios btnios_success" name="save">button</button>
+ */
+.btnios {
+	font-family: "TH SarabunPSK";
+	text-transform: uppercase;
+	border-radius: 2px;
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.45;
+	border-radius: 2px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btnios_default {
+	font-size: 22px;
+	border-color: #e1e1e1 !important;
+}
+.btnios_default:hover {
+	background-color: #fff !important;
+	border-color: #e0e0e0 !important;
+}
+.btnios_success {
+	font-size: 22px;
+	background-color: #8bc34a !important;
+	border-color: #8bc34a !important;
+	color: #ffffff;
+	background-color: #fafafa;
+	border-color: #e0e0e0;
+}
+.btnios_success:hover {
+	color: #ffffff;
+	background-color: #71a436;
+	border-color: #6c9c34;
+}
+.btnios_danger {
+	font-size: 22px;
+	background-color: #e51c23 !important;
+	border-color: #e51c23 !important;
+	color: #ffffff;
+	background-color: #e51c23;
+	border-color: #e51c23;
+}
+.btnios_danger:hover {
+	color: #ffffff;
+	background-color: #b9151b;
+	border-color: #b0141a;
+}
+.btnios_primary {
+	font-size: 22px;
+	background-color: #03a9f4 !important;
+	border-color: #03a9f4 !important;
+	color: #ffffff;
+	background-color: #03a9f4;
+	border-color: #03a9f4;
+}
+.btnios_primary:hover {
+	color: #ffffff;
+	background-color: #0286c2;
+	border-color: #027fb8;
+}

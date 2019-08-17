@@ -1,0 +1,15 @@
+<script type="text/javascript">
+function alertselected(selectobj){
+alert(selectobj.value);
+document.getElementById("someform").input_val.value=selectobj.value;
+}
+</script>
+ 
+<form id="someform" name="someform">
+<select id="sample" onChange="alertselected(this)">
+<option value="1">Option aa</option>
+<option value="2">Option bb</option>
+<option value="3">Option cc</option>
+</select>
+<input name="input_val" type="text" value="" />
+</form>
