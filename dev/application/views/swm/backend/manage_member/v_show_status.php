@@ -43,22 +43,32 @@
 
         });
     </script>-->
+
+    <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-info card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">assignment</i>
+                  </div>
+                  <h4 class="card-title">ข้อมูลสมาชิก</h4>
+                </div>
+                <div class="card-body">
+            
     <div class="panel panel-info">
-        <div class="panel-heading panel_table_iserl">
-            <h2> ข้อมูลสมาชิก </h2>
-            <div class="panel-ctrls"></div>
-        </div>
-        <div class="panel-body material-datatables">
-            <table id="datatables" class="table table-striped table-bordered no-footer table-hover dataTable-Export">
-                <thead class="text-primary">
-                    <tr>
-                        <th>ลำดับ</th>
-                        <th>รหัสสมาชิก</th>
-                        <th>ชื่อจริง - นามสกุล</th>
-                        <th>สถานะ</th>
-                        <th class="disabled-sorting">ตัวดำเนินการ</th>
-                    </tr>
-                </thead>
+    <div class="panel-heading panel_table_iserl">
+        <div class="panel-ctrls"></div>
+    </div>
+    <div class="material-datatables">
+        <table id="datatables" class="table table-striped table-color-header table-hover table-border" cellspacing="0" width="100%" style="width:100%">
+            <thead class="text-primary">
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>รหัสสมาชิก</th>
+                    <th>ชื่อ - นามสกุล</th>
+                    <th>สถานะ</th>
+                    <th class="disabled-sorting">ดำเนินการ</th>
+                </tr>
+            </thead>
                 <tbody>
                     <?php foreach ($status as $key => $value) { ?>
                         <tr>
