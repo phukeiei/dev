@@ -3,8 +3,8 @@
 * Display Show user config
 * @input    $scp_sug_id,$scp_age_min,$scp_age_max,$scp_cost
 * @output   sug_id,age_min,age_max,total
-* @author   Wannapa Srijermtong
-* @create Date  2562-05-17
+* @author   Kannapat Peankaew
+* @create Date  2562-08-20
 -->
 
 <!--------------------------------เปิด/ปิดแท็บ--------------------------------->
@@ -127,6 +127,153 @@
 
 <body>
 
+<div class="col-md-12">
+   <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+         <div class="card-icon">
+            <i class="material-icons">contacts</i>
+         </div>
+         <h4 class="card-title">กำหนดค่าสมัครสมาชิก</h4>
+      </div>
+      <div class="card-body">
+        <form class="form-horizontal">
+          <div class="row">
+            <label class="col-md-2 col-form-label">ช่วงอายุ</label>
+            <div class="col-md-2">
+              <div class="form-group has-default">
+                    <input id="age1_1" type="number" name="age_min" class="form-control text-center" placeholder="1">
+              </div>
+            </div>
+            <label class="col-md-0 col-form-label">ถึง</label>
+            <div class="col-md-2">
+              <div class="form-group has-default">
+                    <input id="age1_2" type="number" name="age_max" class="form-control text-center" placeholder="17"> 
+              </div>
+            </div>
+            <label class="col-md-0 col-form-label">ปี</label>
+            <label class="col-md-1 col-form-label">ราคา</label>
+            <div class="col-md-2">
+              <div class="form-group has-default">
+                    <input min="0" type="number" name="total" class="form-control">   
+              </div>
+            </div>
+            <label class="col-md-0 col-form-label">บาท</label>
+         </div>
+         <div class="row">
+            <label class="col-md-2 col-form-label"></label>
+            <div class="col-md-2">
+              <div class="form-group has-default">
+                    <input id="age1_1" type="number" name="age_min" class="form-control text-center" placeholder="1">
+              </div>
+            </div>
+            <label class="col-md-0 col-form-label">ถึง</label>
+            <div class="col-md-2">
+              <div class="form-group has-default">
+                    <input id="age1_2" type="number" name="age_max" class="form-control text-center" placeholder="17"> 
+              </div>
+            </div>
+            <label class="col-md-0 col-form-label">ปี</label>
+            <label class="col-md-1 col-form-label">ราคา</label>
+            <div class="col-md-2">
+              <div class="form-group has-default">
+                    <input min="0" type="number" name="total" class="form-control">   
+              </div>
+            </div>
+            <label class="col-md-0 col-form-label">บาท</label>
+         </div>
+         
+        
+      <div class="card-footer">
+        <div class="mr-auto">
+            <button class="btn btn-danger" rel="tooltip" data-placement="top" title='คลิกเพื่อยกเลิกข้อมูล'>ยกเลิก</button>
+        </div>
+        <div class="ml-auto">
+        <button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล'>บันทึก</button>
+        </div>
+      </div>   
+   </div>
+</div>
+
+<!--------------------------------------------form 2--------------------------------------------->
+
+<form method="POST" action="./index">   
+
+    <div class="col-md-12">
+            <div class="card">
+                <div class="card-header card-header-info card-header-icon">
+                    <div class="card-icon">
+                        <i class="material-icons">assignment</i>
+                    </div>
+                <h4 class="card-title">ตารางค่าสมัครสมาชิก</h4>
+            </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-color-header table-border">
+                    <thead class="text-primary">
+                        <tr>
+                            <th class="text-center">#</th>
+                                <th class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label" style="margin-top:5px;">
+                                            <input class="form-check-input" type="checkbox" value="" checked="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                        </label>
+                                     </div>
+                            </th>
+                        <th>ช่วงอายุ</th>
+                        <th>ราคา(บาท)</th>
+                        <th>วันที่แก้ไข</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center" rowspan="2" >1</td>
+                        <td class="text-center" rowspan="2" >
+                            <div class="form-check" >
+                                <label class="form-check-label" >
+                                    <input class="form-check-input" type="checkbox" value="" checked="" >
+                                        <span class="form-check-sign" >
+                                            <span class="check" ></span>
+                                        </span>
+                                </label>
+                            </div>  
+                        </td>
+                        <td class="text-center">ต่ำกว่า 18 ปี</td>
+                        <td class="text-center">300</td>
+                        <td rowspan="2"class="text-center" >16 มกราคม 2560</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">มากกว่า 18 ปี</td>
+                        <td class="text-center">350</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" rowspan="2" >2</td>
+                        <td class="text-center" rowspan="2" >
+                            <div class="form-check" >
+                                <label class="form-check-label" >
+                                    <input class="form-check-input" type="checkbox" value="" checked="" >
+                                        <span class="form-check-sign" >
+                                            <span class="check" ></span>
+                                        </span>
+                                </label>
+                            </div>  
+                        </td>
+                        <td class="text-center">ต่ำกว่า 18 ปี</td>
+                        <td class="text-center">400</td>
+                        <td rowspan="2"class="text-center" >15 มกราคม 2560</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">มากกว่า 18 ปี</td>
+                        <td class="text-center">450</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
 
     <div class="col-md-12">
         <div class="panel panel-default">
@@ -217,86 +364,3 @@
 </body>
 
 </html>
-
-
-
-
-<div class="col-md-12">
-    <div class="panel panel-default" data-widget='{"draggable": "false"}'>
-        <div class="panel-heading panel_heading_iserl">
-            <h2>ตารางค่าใช้จ่ายการสมัครสมาชิก</h2>
-        </div>
-
-        <div class="panel-body">
-            <table border="1" class="table table-striped table-bordered table_iserl no-footer table-hover">
-                <thead>
-                    <tr>
-                        <th width="2%">ลำดับ</th>
-                        <th width="15%">ช่วงอายุ</th>
-                        <th width="7%">ค่าสมัคร (บาท)</th>
-                        <th width="15%">ตัวดำเนินการ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php $i = 0;
-                    //foreach($rs_std->result() as $row){	
-                    //$i++;
-                    ?>
-                    <tr>
-                        <td rowspan="2"><br>1</td>
-                        <td>อายุต่ำกว่า 18 ปี</td>
-                        <td>300</td>
-                        <!----------------------------------------------switch----------------------------------------------->
-
-                        <!--------------------------------------------------------------------------------------------------->
-                        <td rowspan="2"><br>
-                            <a herf="#" class="btn btn-orange btn_check_iserl tooltips ti ti-pencil" title="คลิกปุ่มเพื่อแก้ไขข้อมูล"></a>
-                            <a herf="#" class="btn btn-danger btn_check_iserl tooltips ti ti-close" title="คลิกปุ่มเพื่อลบข้อมูล"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>อายุ 18 ปีขึ้นไป</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><br>2</td>
-                        <td>อายุต่ำกว่า 18 ปี</td>
-                        <td>300</td>
-                        <!----------------------------------------------switch----------------------------------------------->
-
-                        <!--------------------------------------------------------------------------------------------------->
-                        <td rowspan="2"><br>
-                            <a herf="#" class="btn btn-orange btn_check_iserl tooltips ti ti-pencil" title="คลิกปุ่มเพื่อแก้ไขข้อมูล"></a>
-                            <a herf="#" class="btn btn-danger btn_check_iserl tooltips ti ti-close" title="คลิกปุ่มเพื่อลบข้อมูล"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>อายุ 18 ปีขึ้นไป</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><br>3</td>
-                        <td>อายุต่ำกว่า 18 ปี</td>
-                        <td>300</td>
-                        <!----------------------------------------------switch----------------------------------------------->
-
-                        <!--------------------------------------------------------------------------------------------------->
-                        <td rowspan="2"><br>
-                            <a herf="#" class="btn btn-orange btn_check_iserl tooltips ti ti-pencil" title="คลิกปุ่มเพื่อแก้ไขข้อมูล"></a>
-                            <a herf="#" class="btn btn-danger btn_check_iserl tooltips ti ti-close" title="คลิกปุ่มเพื่อลบข้อมูล"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>อายุ 18 ปีขึ้นไป</td>
-                        <td>500</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-        <!------------->
-    </div>
-</div>
