@@ -215,114 +215,104 @@
 
 
 </script>
-
+<!------------------------------------  อันล่าสุด -------------------------->
 <div class="col-md-12">
-    <div class="panel panel-default">
-        <div class="panel-heading panel_heading_iserl">
-            <h2>กำหนดค่าใช้บริการ</h2>
+   <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+         <div class="card-icon">
+            <i class="material-icons">contacts</i>
+         </div>
+         <h4 class="card-title"> กำหนดค่าใช้บริการ</h4>
+      </div>
+      <div class="card-body">
+      <div class="col-lg-5 col-md-6 col-sm-3">
+    <div class="dropdown bootstrap-select">
+        <select class="selectpicker" data-size="4" data-style="btn btn-primary btn-round" title="สถานะผู้ใช้งาน" tabindex="-98">
+                            <option class="bs-title-option" value=""></option>
+                            <option disabled="" selected="">สถานะผู้ใช้งาน</option>
+                            <option value="2">สมาชิก</option>
+                            <option value="2">ผู้ใช้ทั่วไป</option>
+                          </select>
         </div>
-        <div class="panel-body">
-            <div class="col-md-12">
-
-                <!--------------------------------------------form 1--------------------------------------------->
-                <form method="POST" action="<?php echo base_url("index.php/swm/backend/Swm_config/user_price_config_insert"); ?>">
-
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">ประเภทผู้ใช้บริการ</label>
-                        <div class="col-sm-5">
-                            <label class="radio-inline icheck"><input type="radio" value="1" name="sug_id" checked>&nbsp;&nbsp;&nbsp;สมาชิก</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <label class="radio-inline icheck"><input type="radio" value="2" name="sug_id">&nbsp;&nbsp;&nbsp;ผู้ใช้ทั่วไป</label>
-                        </div>
-                    </div>
-                    <br><br>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">ช่วงอายุ</label>
-                        <div class="col-sm-4">
-                            <input id="age1_1" min=0 type="number" name="age_member_min" class="form-control" placeholder="">
-                        </div>
-                        <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ถึง</label>
-                        <div class="col-sm-4">
-                            <input id="age1_2" min=0 type="number" name="age_member_max" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">จำนวนเงิน</label>
-                        <div class="col-sm-8">
-                            <input min="0" type="number" name="member_total" class="form-control">
-                        </div>
-                        บาท
-                    </div>    
-
-                <!--------------------------------------------form 2--------------------------------------------->
-                    <br>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">ช่วงอายุ</label>
-                        <div class="col-sm-4">
-                            <input readonly="readonly" min=0 id="age2_1" type="number" name="age_nonmember_min" class="form-control" placeholder="" >
-                        </div>
-                        <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ถึง</label>
-                        <div class="col-sm-4">
-                            <input id="age2_2" min=0 type="number" name="age_nonmember_max" class="form-control" placeholder="">
-                        </div>
-                        <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ปี</label>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">จำนวนเงิน</label>
-                        <div class="col-sm-8">
-                            <input min="0" type="number" name="nonmember_total" class="form-control">
-                        </div>บาท
-                    </div>
-
-                    <div class="panel-footer">
-                        
-                        <input class="btn btn-inverse btn_iserl tooltips " title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" type="reset" value="เคลียร์" /> &nbsp;&nbsp;
-                        <input class="btn btn-success btn_iserl tooltips pull-right" title="คลิกปุ่มเพื่อบันทึกข้อมูล" type="submit" value="บันทึก" />
-                        
-                    </div>
-
-                </form>
-
-                <!---------------------------------------------------------------------------------------------->
-
+</div>
+        <form class="form-horizontal">
+          <div class="row">
+            <label class="col-md-3 col-form-label">ช่วงอายุ</label>
+            <input id="age1_1" min=0 type="number" name="age_member_min" class="form-control" placeholder="">
+            <label class="col-md-0 col-form-label">ปี   ถึง</label>
+            <input id="age1_2" min=0 type="number" name="age_member_max" class="form-control" placeholder="">
+            <label class="col-md-0 col-form-label">ปี ราคา</label>
+            <input min="0" type="number" name="member_total" class="form-control" placeholder="">
+            <label class="col-md-0 col-form-label">บาท</label>
+         </div>
+         <div class="row">
+         <label class="col-md-3 col-form-label"></label>
+            <input id="age1_1" min=0 type="number" name="age_member_min" class="form-control" placeholder="">
+            <label class="col-md-0 col-form-label">ปี   ถึง</label>
+            <input id="age1_2" min=0 type="number" name="age_member_max" class="form-control" placeholder="">
+            <label class="col-md-0 col-form-label">ปี ราคา</label>
+            <input min="0" type="number" name="member_total" class="form-control" placeholder="">
+            <label class="col-md-0 col-form-label">บาท</label>
+           </div>
+       <!-- <div class="row">
+          <label class="col-md-3"></label>
+            <div class="col-md-9">
+              
             </div>
+          </div>
+        </form>
+      </div>-->
+      <div class="card-footer">
+        <div class="mr-auto">
+          <button class="btn btn-danger" rel="tooltip" data-placement="top" title="" data-original-title="คลิกเพื่อยกเลิกข้อมูล">ยกเลิก</button>
         </div>
-    </div>
+        <div class="ml-auto">
+         <!-- <button type="submit" class="btn btn-fill btn-success " rel="tooltip" data-placement="top" title='Submit'>Submit</button>-->
+          <button class="btn btn-success" rel="tooltip" data-placement="top" title="" data-original-title="คลิกเพื่อบันทึกข้อมูล">บันทึก</button>
+        </div>
+      </div>	  
+   </div>
 </div>
-</div>
+
+<!------------------------------------  อันล่าสุด -------------------------->
 
 
 
+
+
+<!----------------------------------------ตารางใหม่------------------------>
 <div class="col-md-12">
-    <div class="panel panel-default" data-widget='{"draggable": "false"}'>
-        <div class="panel-heading panel_heading_iserl">
-            <h2>ตารางค่าใช้จ่ายการใช้บริการ</h2>
+    <div class="card">
+        <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon">
+                <i class="material-icons">assignment</i>
+            </div>
+            <h4 class="card-title">ตารางค่าใช้บริการ</h4>
         </div>
-
-        <div class="panel-body">
-
-            <!-----------------------------------------------Tab 1----------------------------------------------->
-            <div class="tab-container tab-default">
-                <ul class="nav nav-tabs">
-                    <li id="tab_user" class=''><a data-toggle="tab"><b>สมาชิก</b></a></li>
-                    <li id="tab_member" class=''><a data-toggle="tab"><b>ผู้ใช้ทั่วไป</b></a></li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tabs1">
-                        <br>
-                        <table border="1" class="table table-striped table-bordered table_iserl no-footer table-hover">
-                            <thead>
-                                <tr>
-                                    <th >ลำดับ</th>
-                                    <th>ช่วงอายุ</th>
-                                    <th>ค่าใช้บริการ (บาท)</th>
-                                    <th>สถานะการใช้งาน</th>
-                                    <th >ตัวดำเนินการ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $i = 0;
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-striped table-hover table-color-header table-border">
+                    <thead class="text-primary">
+                    <tr>
+                    <th class="text-center">ลำดับ</th>
+                    <th class="text-center"><div class="form-check">
+                    <label class="form-check-label" style="margin-top:5px;">
+                    <input class="form-check-input" type="checkbox" value="" checked="">
+                    <span class="form-check-sign">
+                    <span class="check"></span>
+                    </span>
+                    </label>
+                    </div>
+                    </th>
+                        <th>สถานะสมาชิก</th>
+                        <th>ช่วงอายุ</th>
+                        <th>ค่าใช้บริการ (บาท)</th>
+                        <th>วันที่แก้ไขข้อมูล</th>
+                        <th >ตัวดำเนินการ</th>              
+                    </tr>
+                    </thead>
+                    <tbody> 
+                    <?php $i = 0;
                                 //pre($rs_cost_pool);
                                 foreach($tmp_arr as $row){	
                                     $i++;
@@ -333,18 +323,28 @@
                                 ?>
                                 <tr>
                                     <td rowspan="<?php echo count($row);?>"><?php echo $i; ?></td>
+                                    <td class="text-center"  rowspan="<?php echo count($row);?>">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="" checked="">
+                                            <span class="form-check-sign">
+                                            <span class="check"></span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                </td>
+                                    <td rowspan="<?php echo count($row);?>" class="text-center"><?php echo "สมาชิก";?></td>
                                     <td><?php echo $sub_row->scp_age_min; ?></td>
                                     <td><?php echo $sub_row->scp_cost; ?></td>
-                                    <td rowspan="<?php echo count($row);?>">
-                                        <label class="switch" >
-                                            <input id="sl1" type="checkbox" class="sw" <?php echo ($sub_row->scp_is_active=='Y')?'checked':'';?> value="<?php echo $sub_row->scp_reference ?>">
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <input id="user_status" type="hidden" class="sw" value="<?php echo $sub_row->scp_sug_id ?>">
+                                    <td rowspan="<?php echo count($row);?>" class="text-center"><?php echo "2019-05-20";?></td>
                                     </td>
-                                    <td rowspan="<?php echo count($row);?>" style="vertical-align: center;">
-                                        <a herf="#" class="btn btn-orange btn_check_iserl tooltips ti ti-pencil" title="คลิกปุ่มเพื่อแก้ไขข้อมูล"></a>
-                                        <a herf="#" class="btn btn-danger btn_check_iserl tooltips ti ti-close" title="คลิกปุ่มเพื่อลบข้อมูล"></a>
+                                    <td rowspan="<?php echo count($row);?>" class="td-actions text-center">
+                                    <button type="button" rel="tooltip" class="btn btn-warning" data-placement="top" title="" data-original-title="คลิกเพื่อแก้ไขข้อมูล">
+                                        <i class="material-icons">edit</i>
+                                    </button>
+                                    <button type="button" rel="tooltip" class="btn btn-danger" data-placement="top" title="" data-original-title="คลิกเพื่อลบข้อมูล">
+                                        <i class="material-icons">close</i>
+                                    </button>
                                     </td>
                                 </tr>
                                 <?php }else{ ?>
@@ -356,67 +356,39 @@
 
                                     }
                                 } ?>
-                            </tbody>
+                        </tbody>
                         </table>
-                    </div>
-
-                    <!--------------------------------------------Tab 2------------------------------------------------------->
-
-                    <div class="tab-pane active" id="tabs2">
-                        <br>
-                        <table border="1" class="table table-striped table-bordered table_iserl no-footer table-hover">
-                            <thead>
-                                <tr>
-                                    <th >ลำดับ</th>
-                                    <th >ช่วงอายุ</th>
-                                    <th >ค่าใช้บริการ (บาท)</th>
-                                    <th >สถานะการใช้งาน</th>
-                                    <th >ตัวดำเนินการ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php $i = 0;
-                                //pre($rs_cost_pool);
-                                foreach($tmp_arr_nonmember as $row){	
-                                    $i++;
-
-                                // for ($i=1; $i <= count($rs_cost_pool) ; $i++) { 
-                                foreach($row as $ind => $sub_row){
-                                    if($ind==0){
-                                ?>
-                                <tr>
-                                    <td rowspan="<?php echo count($row);?>"><?php echo $i; ?></td>
-                                    <td><?php echo $sub_row->scp_age_min; ?></td>
-                                    <td><?php echo $sub_row->scp_cost; ?></td>
-                                    <td rowspan="<?php echo count($row);?>">
-                                        <label class="switch" >
-                                            <input type="checkbox" class="sw1" <?php echo ($sub_row->scp_is_active=='Y')?'checked':'';?> value="<?php echo $sub_row->scp_reference ?>">
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <input id="user_status_nonmember" type="hidden" class="sw" value="<?php echo $sub_row->scp_sug_id ?>">
-                                    </td>
-                                    <td rowspan="<?php echo count($row);?>" style="vertical-align: center;">
-                                        <a herf="#" class="btn btn-orange btn_check_iserl tooltips ti ti-pencil" title="คลิกปุ่มเพื่อแก้ไขข้อมูล"></a>
-                                        <a herf="#" class="btn btn-danger btn_check_iserl tooltips ti ti-close" title="คลิกปุ่มเพื่อลบข้อมูล"></a>
-                                    </td>
-                                </tr>
-                                <?php }else{ ?>
-                                    <tr>
-                                        <td><?php echo $sub_row->scp_age_min; ?></td>
-                                        <td><?php echo $sub_row->scp_cost; ?></td>
-                                    </tr>
-                                <?php } 
-
-                                    }
-                                } ?>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
             </div>
-            <!--แท็บนอก-->
         </div>
-        <!------------->
     </div>
 </div>
+
+
+
+<!----------------------------------------ตารางใหม่------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
