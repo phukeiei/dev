@@ -163,13 +163,13 @@
             <label class="col-md-2 col-form-label"></label>
             <div class="col-md-2">
               <div class="form-group has-default">
-                    <input id="age2_1" type="number" name="age_min" class="form-control" placeholder="18 ปี" readonly>
+              <input id="age1_1" type="number" name="age_min" class="form-control text-center" placeholder="18">
               </div>
             </div>
             <label class="col-md-0 col-form-label">ถึง</label>
             <div class="col-md-2">
               <div class="form-group has-default">
-                <input id="age2_2" type="number" name="age_max" class="form-control" placeholder="99 ปี" maxlength="2" min="1" max="99" oninput="maxLengthCheck(this)">
+                <input id="age2_2" type="number" name="age_max" class="form-control text-center" placeholder="99" maxlength="2" min="1" max="99" oninput="maxLengthCheck(this)">
               </div>
             </div>
             <label class="col-md-0 col-form-label">ปี</label>
