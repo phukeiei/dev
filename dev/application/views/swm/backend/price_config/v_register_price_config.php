@@ -126,7 +126,7 @@
 </head>
 
 <body>
-
+<!-------------------------------------------- 1 --------------------------------------------->
 <div class="col-md-12">
    <div class="card">
       <div class="card-header card-header-info card-header-icon">
@@ -163,13 +163,13 @@
             <label class="col-md-2 col-form-label"></label>
             <div class="col-md-2">
               <div class="form-group has-default">
-                    <input id="age1_1" type="number" name="age_min" class="form-control text-center" placeholder="1">
+                    <input id="age2_1" type="number" name="age_min" class="form-control" placeholder="18 ปี" readonly>
               </div>
             </div>
             <label class="col-md-0 col-form-label">ถึง</label>
             <div class="col-md-2">
               <div class="form-group has-default">
-                    <input id="age1_2" type="number" name="age_max" class="form-control text-center" placeholder="17"> 
+                <input id="age2_2" type="number" name="age_max" class="form-control" placeholder="99 ปี" maxlength="2" min="1" max="99" oninput="maxLengthCheck(this)">
               </div>
             </div>
             <label class="col-md-0 col-form-label">ปี</label>
@@ -194,7 +194,7 @@
    </div>
 </div>
 
-<!--------------------------------------------form 2--------------------------------------------->
+<!-------------------------------------------- 2 --------------------------------------------->
 
 <form method="POST" action="./index">   
 
@@ -274,91 +274,6 @@
     </div>
 </div>
 </div>
-
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading panel_heading_iserl">
-                <h2>กำหนดค่าสมัครสมาชิก</h2>
-            </div>
-            <div class="panel-body">
-                <div class="col-md-12">
-
-                    <!--------------------------------------------form 1--------------------------------------------->
-                    <form method="POST" action="./index">
-
-                        <!--<div class="form-group">
-                            <label class="col-sm-2 control-label">ประเภทผู้ใช้บริการ</label>
-                            <div class="col-sm-5">
-                                <label class="radio-inline icheck"><input type="radio" value="1" name="sug_id">&nbsp;&nbsp;&nbsp;สมาชิก</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <label class="radio-inline icheck"><input type="radio" value="2" name="sug_id">&nbsp;&nbsp;&nbsp;ผู้ใช้ทั่วไป</label>
-                            </div>
-                        </div>-->
-                        <br><br>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">ช่วงอายุ</label>
-                            <div class="col-sm-4">
-                                <input id="age1_1" type="number" name="age_min" class="form-control" placeholder="1 ปี">
-                            </div>
-                            <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ถึง</label>
-                            <div class="col-sm-4">
-                                <input id="age1_2" type="number" name="age_max" class="form-control" placeholder="17 ปี">
-                            </div>
-                            <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ปี</label>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">จำนวนเงิน</label>
-                            <div class="col-sm-4">
-                                <input min="0" type="number" name="total" class="form-control">
-                            </div>
-                            บาท
-                        </div>
-
-                    </form>
-
-                    <!--------------------------------------------form 2--------------------------------------------->
-
-                    <form method="POST" action="./index">
-
-                        <hr>
-                        <br>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">ช่วงอายุ</label>
-                            <div class="col-sm-4">
-                                <input id="age2_1" type="number" name="age_min" class="form-control" placeholder="18 ปี" readonly>
-                            </div>
-                            <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ถึง</label>
-                            <div class="col-sm-4">
-                                <input id="age2_2" type="number" name="age_max" class="form-control" placeholder="99 ปี" maxlength="2" min="1" max="99" oninput="maxLengthCheck(this)">
-                            </div>
-                            <label class="col-sm-1 control-label" style="max-width:15px;padding:0px;">ปี</label>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">จำนวนเงิน</label>
-                            <div class="col-sm-4">
-                                <input min="0" type="number" name="total" class="form-control">
-                            </div>บาท
-                        </div>
-
-
-                        <div class="panel-footer">
-                            <span class="text-gray demo-btns">
-                                <input class="btn btn-danger btn_iserl tooltips " title="คลิกปุ่มเพื่อลบข้อมูล" type="submit" value="ลบ" />
-                                <input class="btn btn-inverse btn_iserl tooltips " title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" type="submit" value="เคลียร์" /> &nbsp;&nbsp;
-                                <input class="btn btn-success btn_iserl tooltips pull-right" title="คลิกปุ่มเพื่อบันทึกข้อมูล" type="submit" value="บันทึก" />
-                            </span>
-                        </div>
-
-                    </form>
-
-                    <!---------------------------------------------------------------------------------------------->
-
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
 
 </body>
