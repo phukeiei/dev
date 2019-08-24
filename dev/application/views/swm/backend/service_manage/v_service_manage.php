@@ -7,7 +7,7 @@
 * @Update   Kanathip Phithaskilp
 * @Update Date  2562-5-17
  */-->
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,11 +16,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>บันทึกการเข้าใช้บริการ</title>
 </head>
-<style>
-	body {
-		font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-</style>
 
 <body>
 
@@ -128,13 +123,12 @@
 				<h4 class="card-title">การเข้าใช้บริการ</h4>
 			</div>
 			<div class="card-body">
-				<form class="form-horizontal">
 					<form method="post" action="<?php echo site_url('/swm/backend/Swm_service_manage/insert'); ?>">
 						<input type="hidden" id="su_id" name="su_id">
 						<input type="hidden" id="scp_id" name="scp_id">
 						<div>
 							<label class="col-sm-4 control-label">รหัสสมาชิก</label>
-							<div class="col-sm-3">
+							<div class="col-sm-4">
 								<input type="text" class="form-control" name="memid" id="memid" onkeyup="checkMember()" placeholder="รหัสสมาชิก">
 							</div>
 							<!-- <input class="btn btn-danger btn_iserl tooltips" title="คลิกปุ่มเพื่อตรวจสอบข้อมูล" type="button" value="ตรวจสอบ"  /> -->
@@ -153,7 +147,7 @@
 									</div>
 
 									<label class="col-sm-4 control-label">เวลา</label>
-									<div class="col-sm-4"><input type="time" class="form-control" value="<?php echo date("h:i"); ?>" name="time"></div>
+									<div class="col-sm-4"><input type="time" class="form-control" value="<?php echo date("H:i"); ?>" name="time"></div>
 									<br><br>
 									<div class="form-group">
 										<label class="col-sm-4 control-label">อายุ</label>
@@ -166,24 +160,34 @@
 											</label>
 										</div>
 									</div>
-									<br><br><br>
+									<br>
 									<label class="col-sm-4 control-label">ราคา</label>
-									<div class="col-sm-2">
+									<div class="col-sm-4">
 										<input type="number" class="form-control" name="cost" id="cost" placeholder="ราคา">
 									</div>
+
+
 								</div>
 							</div>
 						</div>
-					</form>
-				</form>
-				<br><br><br><br><br>
-				<div class="card-footer">
+						<div class="card-footer">
 					<button class="btn" rel="tooltip" data-placement="top" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</button>
-					<button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล' onclick="checkOn()">บันทึก</button>
+					<button class="btn btn-success" type="submit" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล' onclick="checkOn()">บันทึก</button>
 				</div>
-			</div>
+					</form>
 
+
+				<br><br><br><br><br>
+				<!-- <span class="text-gray demo-btns">
+					<a class="btn btn-inverse btn_iserl tooltips" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</a>
+					<div class="ml-auto">
+						<button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล'>บันทึก</button>
+					</div> -->
+
+				</span>
+			</div>
 		</div>
+	</div>
 
 </body>
 
