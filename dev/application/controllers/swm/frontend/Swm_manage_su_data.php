@@ -43,7 +43,9 @@ class Swm_manage_su_data extends  Swm_front_end_controller{
 			$data['phone'] = $rs_data->row()->psd_cellphone;
 			$data['work'] = $rs_data->row()->su_work;
 			$data['workplace'] = $rs_data->row()->su_workplace;
-			
+			$data['exp_date'] = fullDateTH2($rs_data->row()->su_expire_date);
+			$data['status'] = $rs_data->row()->ss_name;
+			$data['su_code'] = $rs_data->row()->su_code;
 			//contact
 			// su_contact_pf_id,
 				// su_contact_fname,
@@ -52,7 +54,7 @@ class Swm_manage_su_data extends  Swm_front_end_controller{
 			$con_pf = ($rs_data->row()->su_contact_pf_id != 0) ? $rs_data->row()->con_pf_name :'';
 			$con_fname = ($rs_data->row()->su_contact_fname) ? $rs_data->row()->su_contact_fname :'';
 			$con_lname = ($rs_data->row()->su_contact_lname) ? $rs_data->row()->su_contact_lname :'';
-			$data['contact_full_namee'] = ($con_fname) ? $con_pf.$con_fname." ".$con_lname : '-';
+			$data['contact_full_name'] = ($con_fname) ? $con_pf.$con_fname." ".$con_lname : '-';
 			// echo substr($rs_data->row()->su_tel_contact,0,3);
 			// echo substr($rs_data->row()->su_tel_contact,3,7);
 			$data['contact_tell'] = substr($rs_data->row()->su_tel_contact,0,3)."-".substr($rs_data->row()->su_tel_contact,3,7);
@@ -81,6 +83,9 @@ class Swm_manage_su_data extends  Swm_front_end_controller{
 			$data['ampn'] = "";
 			$data['district'] = "";
 			$data['zipcode'] = "";
+			$data['exp_date'] = "";
+			$data['status'] = "ไม่เป็นสมาชิก";
+			$data['su_code'] = '-';
 		}
 		$this->output_frontend($this->view."user_data/v_show_su_data",$data);
     }
@@ -156,6 +161,7 @@ class Swm_manage_su_data extends  Swm_front_end_controller{
 			$data['phone'] = $rs_data->row()->psd_cellphone;
 			$data['work'] = $rs_data->row()->su_work;
 			$data['workplace'] = $rs_data->row()->su_workplace;
+			$data['su_code'] = $rs_data->row()->su_code;
 			
 			//contact
 			$data['contact_full_namee'] = ($rs_data->row()->contact_full_name) ? $rs_data->row()->contact_full_name : '-';
@@ -188,6 +194,7 @@ class Swm_manage_su_data extends  Swm_front_end_controller{
 			$data['ampn'] = "";
 			$data['district'] = "";
 			$data['zipcode'] = "";
+			$data['su_code'] = '-';
 		}
 		
 		$this->output_frontend($this->view."user_data/v_form_edit",$data);
@@ -215,7 +222,24 @@ class Swm_manage_su_data extends  Swm_front_end_controller{
 		$msu->su_contact_lname = $this->input->post('su_contact_lname');
 		$msu->su_tel_contact = $this->input->post('su_tel_contact');
 		$msu->update();
-		// pre($this->input->post());
+
+		//upload img
+		$config['file_name']          	= $this->msu->su_code;
+		$config['overwrite']          	= TRUE;
+		$config['upload_path']          = APPPATH . 'views/swm/frontend/IMG/Profile/';
+		$config['allowed_types']		= '*';//'gif|jpg|png';
+		$config['max_size']             = 100;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+
+		$this->load->library('upload', $config);
+		
+		$this->upload->do_upload('profile_img');
+
+		/*$data['upload'] = array('upload_data' => $this->upload->data());
+		pre($data['upload']);*/
+
+		//pre($this->input->post());
 		
 		$this->show_su_data();
 	}

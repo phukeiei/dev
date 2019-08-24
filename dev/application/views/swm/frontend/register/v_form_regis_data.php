@@ -112,7 +112,7 @@ font-size: 18px; }
 						<div class="col-md-3"></div>
 					</div>
 				<div class="row">
-						<div class="col-md-6" style="text-align:left"><a class="btn btn-inverse"  href="<?php echo site_url('/swm/frontend/Swm_show_service'); ?>">ย้อนกลับ</a></div>
+						<div class="col-md-6" style="text-align:left"><a class="btn btn-inverse"  href="<?php echo base_url() . 'index.php/swm/frontend/Swm_register';?>">ย้อนกลับ</a></div>
 						<div class="col-md-6" style="text-align:right"><a href="<?php echo site_url("/swm/frontend/Swm_register/show_form_register_input"); ?>"> <button class="btn ">ถัดไป</button> </a></div>
 				</div>
 		</div>

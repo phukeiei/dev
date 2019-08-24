@@ -97,11 +97,11 @@
 
     <div class="page-content ng-scope" ng-view="">
         <ol class="breadcrumb ng-scope">
-            <li class="active">ระบบศูนย์นันทนาการสระว่ายน้ำ</li>
-            <li><a href="#/">หน้าแรก</a></li>
-            <li><a href="#/">เมนูผู้ดูแลระบบ</a></li>
-            <li><a href="#/">สมัครสมาชิก</a></li>
-            <li><a href="#/">ค้นหาผู้ใช้งาน</a></li>
+            <li class="active">ระบบศูนย์นันทนาการสระว่ายน้ำ&nbsp;&nbsp;</li>
+            <li><a href="#/">หน้าแรก&nbsp;</a></li>
+            <li><a href="#/">เมนูผู้ดูแลระบบ&nbsp;</a></li>
+            <li><a href="#/">สมัครสมาชิก&nbsp;</a></li>
+            <li><a href="#/">ค้นหาผู้ใช้งาน&nbsp;</a></li>
             <li><a href="#/">แบบฟอร์มสมัครสามชิก</a></li>
         </ol>
 
@@ -119,80 +119,78 @@
 
         <body>
 
-
             <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading panel_heading_iserl">
-                        <h2>แบบฟอร์มสมัครสมาชิก</h2>
+             <div class="card">
+                 <div class="card-header card-header-info card-header-text">
+                     <div class="card-text">
+                        <h4 class="car-title">แบบฟอร์มสมัครสมาชิก</h4>
                     </div>
-                    <div class="panel-body">
-
+                </div>
+                <div class="card-body">
 
                         <div class="col-md-12">
                             <div class="panel-body">
                                 <div class="panel panel-default">
                                     <div class="panel-heading panel_heading_sub_iserl">
-                                        <h2>ข้อมูลส่วนตัว</h2>
+                                        <h3>ข้อมูลส่วนตัว</h3>
                                         <div class="tooltips panel_tap_iserl" title='' data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
                                         </div>
                                     </div>
                                     <br>
 
 
+
+                                <div class="row">
+                                    <div class="col-12">
                                     <form class="form-horizontal row-border" name="form-1" action='#'>
-
                                         <div class="form-group">
-                                            <label id="title" class="col-sm-2 control-label">วันที่สมัคร&nbsp;&nbsp;&nbsp;:</label>
-                                            <div class="col-sm-4">
+                                            <label id="title" class="col-sm-2 control-label">วันที่สมัคร&nbsp;&nbsp;:</label>
                                                 <span>
-                                                        <label class="col-sm-4" style="max-width:200px;padding:6px;"><?php echo  abbreDate2($value['regdate']); ?></label>
-
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">คำนำหน้าชื่อ&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-9">
-                                                    <label class="col-sm-2" style="max-width:200px;padding:6px;"><?php echo  $value['prefix']; ?></label>
-                                                    <label id="title" class="col-sm-5 control-label">ชื่อ-นามสกุล&nbsp;&nbsp;&nbsp;:</label>
-                                                    <label class="col-sm-2" style="max-width:200px;padding:6px;"> <?php echo $value['fname'] . " " . $value['lname']; ?></label>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">วันเกิด&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-9">
-                                                    <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo  abbreDate2($value['birthday']); ?></label>
-                                                    <label id="title" class="col-sm-4 control-label">&nbsp;&nbsp;&nbsp;อายุ&nbsp;&nbsp;&nbsp;:</label>
-                                                    <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo  calAge3($value['birthday']); ?> &nbsp;&nbsp;ปี</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">อาชีพ&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-6">
-                                                    <input type="text" id="regis_job" value="<?php echo $value['job']; ?>">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">เบอร์โทรศัพท์&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-6">
-                                                    <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['tel']; ?></label>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <!--เอาไว้จัดหน้า-->
-                                            </div>
-                                        </form>
+                                                    <label class="col-sm-4" style="max-width:200px;padding:6px;"><?php echo  abbreDate2($value['regdate']); ?></label>
+                                                </span>        
+                                        </div>
                                     </div>
+                                </div>
+
+                                <div class="form-group">
+                                        <label id="title" class="col-2 control-label">คำนำหน้าชื่อ&nbsp;&nbsp;:</label>
+                                            <label class="col-sm-1" style="max-width:200px;padding:6px;"><?php echo  $value['prefix']; ?></label>
+                                        <label id="title" class="col-2 control-label">ชื่อ-นามสกุล&nbsp;&nbsp;:</label>
+                                            <label class="col-6" style="max-width:200px;padding:6px;"> <?php echo $value['fname'] . " " . $value['lname']; ?></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="title" class="col-2 control-label">วันเกิด&nbsp;&nbsp;:</label>
+                                        <label class="col-3" style="max-width:200px;padding:6px;"><?php echo  abbreDate2($value['birthday']); ?></label>
+                                    <label id="title" class="col-2 control-label">&nbsp;&nbsp;อายุ&nbsp;&nbsp;:</label>
+                                        <label class="col-3" style="max-width:200px;padding:6px;"><?php echo  calAge3($value['birthday']); ?> &nbsp;&nbsp;ปี</label>
+                                </div>
+
+                                <div class="container">
+                                    <div class="form-group row">
+                                        <div class="col-md-2">
+                                            <label class="control-label">อาชีพ&nbsp;&nbsp;:</label>
+                                        </div>
+                                        <div class="col-md-4" style="margin-top: -0.5rem;">
+                                            <input type="text" id="regis_job" value="<?php echo $value['job']; ?>" name="job" type="text" class="form-control" name="rjob">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="title" class="col-sm-2 control-label">เบอร์โทรศัพท์&nbsp;&nbsp;:</label>
+                                    <label class="col-sm-4" style="max-width:200px;padding:6px;"><?php echo $value['tel']; ?></label>      
+                                </div>
+                            <div>
+                                                <!--เอาไว้จัดหน้า-->
+                            </div>
+                            </form>
+                        </div>
 
 
                                     <div class="panel panel-default">
                                         <div class="panel-heading panel_heading_sub_iserl">
-                                            <h2>ที่อยู่ปัจจุบัน</h2>
+                                            <h3>ที่อยู่ปัจจุบัน</h3>
                                             <div class="tooltips panel_tap_iserl" title='' data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
                                             </div>
                                         </div>
@@ -201,39 +199,27 @@
                                         <form class="form-horizontal row-border">
 
                                             <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">ที่อยู่&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
-                                                    <div id="reg_address_border" class="">
-                                                        <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['addr']; ?></label>
-                                                    </div>
-                                                </div>
+                                                <label id="title" class="col-sm-2 control-label">ที่อยู่&nbsp;&nbsp;:</label>
+                                                <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['addr']; ?></label>        
                                             </div>
 
                                             <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">จังหวัด&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
-                                                    <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['province']; ?></label>
-                                                </div>
-                                            </div>
+                                                <label id="title" class="col-sm-2 control-label">จังหวัด&nbsp;&nbsp;:</label>
+                                                <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['province']; ?></label>
+                                           </div>
 
                                             <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">อำเภอ&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
+                                                <label id="title" class="col-sm-2 control-label">อำเภอ&nbsp;&nbsp;:</label>
                                                 <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['amphor']; ?></label>
-                                                </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">ตำบล&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
+                                                <label id="title" class="col-sm-2 control-label">ตำบล&nbsp;&nbsp;:</label>
                                                 <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['dist']; ?></label>
-                                                </div>
                                             </div>
                                             <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">รหัสไปรษณีย์&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
+                                                <label id="title" class="col-sm-2 control-label">รหัสไปรษณีย์&nbsp;&nbsp;:</label>
                                                 <label class="col-sm-6" style="max-width:200px;padding:6px;"><?php echo $value['zipcode']; ?></label>
-                                                </div>
                                             </div>
                                             <div>
                                                 <!--เอาไว้จัดหน้า-->
@@ -241,37 +227,46 @@
                                             </div>
                                         </form>
                                     </div>
+                                </div>
 
                                     <div class="panel panel-default">
                                         <div class="panel-heading panel_heading_sub_iserl">
-                                            <h2>ข้อมูลบุคคลอ้างอิง</h2>
+                                            <h3>ข้อมูลบุคคลอ้างอิง</h3>
                                             <div class="tooltips panel_tap_iserl" title='' data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
                                             </div>
                                         </div>
                                         <br>
 
                                         <form class="form-horizontal row-border" name="form-3">
+                                            <div class="container">
+                                                <div class="form-group row">
+                                                   <div class="col-md-2">
+                                                        <label class="control-label">ชื่อ&nbsp;&nbsp;&nbsp;:</label>
+                                                    </div>
+                                                    <div class="col-md-6" style="margin-top: -0.5rem;">
+                                                        <input value="<?php echo $value['cfname']; ?>" id="fname_ref" name="fname_ref" type="text" class="form-control" name="dfname">
+                                                    </div>
+                                                </div>
 
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">ชื่อ&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
-                                                    <input value="<?php echo $value['cfname']; ?>" id="fname_ref" name="fname_ref" type="text" class="form-control" name="dfname">
+                                                <div class="form-group row">
+                                                    <div class="col-md-2">
+                                                        <label class="control-label">นามสกุล&nbsp;&nbsp;&nbsp;:</label>
+                                                    </div>
+                                                    <div class="col-md-6" style="margin-top: -0.5rem;">
+                                                        <input value="<?php echo $value['clname']; ?>" id="lname_ref" name="lname_ref" type="text" class="form-control" name="dlname">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group">
+                                                    <div class="col-md-2">
+                                                        <label class="control-label">เบอร์โทรศัพท์&nbsp;&nbsp;&nbsp;:</label>
+                                                    </div>
+                                                    <div class="col-md-6" style="margin-top: -0.5rem;">
+                                                        <input value="<?php echo $value['ctel']; ?>" id="tel_ref" name="tel_ref" type="text" class="form-control" name="dtel">
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">นามสกุล&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
-                                                    <input value="<?php echo $value['clname']; ?>" id="lname_ref" name="lname_ref" type="text" class="form-control" name="dlname">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label id="title" class="col-sm-2 control-label">เบอร์โทรศัพท์&nbsp;&nbsp;&nbsp;:</label>
-                                                <div class="col-sm-8">
-                                                    <input value="<?php echo $value['ctel']; ?>" id="tel_ref" name="tel_ref" type="text" class="form-control" name="dtel">
-                                                </div>
-                                            </div>
 
                                             <div>
                                                 <!--เอาไว้จัดหน้า-->

@@ -38,17 +38,17 @@
 			$('#insert_btn').attr('disabled', true)
 		})
 
-		function reset(){
+		function reset() {
 			$("#mem_status").text("")
 			$("#memid").val("")
-			$('#scp_id').val("") 
+			$('#scp_id').val("")
 			$('#su_id').val("")
 			$('#cost').val(0)
 		}
 
 		function checkMember() {
 			let memid = $("#memid").val()
-			
+
 
 			$.post(
 				"<?php echo site_url('/swm/backend/Swm_service_manage/search_member'); ?>", {
@@ -96,7 +96,7 @@
 					let cost = data.scp_cost
 					console.log(data)
 					$('#cost').val(cost)
-					$('#scp_id').val(data.scp_id) 
+					$('#scp_id').val(data.scp_id)
 
 					$('#insert_btn').removeAttr('disabled')
 				}
@@ -104,67 +104,81 @@
 		}
 	</script>
 
-	<div class="col-md-12">
-		<div class="panel panel-default">
-			<div class="panel-heading panel_heading_iserl">
-				<h2>การเข้าใช้บริการ</h2>
+	<div class="col-md-8">
+		<div class="card">
+			<div class="card-header card-header-info card-header-icon">
+				<div class="card-icon">
+					<i class="material-icons">contacts</i>
+				</div>
+				<h4 class="card-title">การเข้าใช้บริการ</h4>
 			</div>
-			<div class="panel-body">
-				<form method="post" action="<?php echo site_url('/swm/backend/Swm_service_manage/insert'); ?>">
-					<input type="hidden" id="su_id" name="su_id">
-					<input type="hidden" id="scp_id" name="scp_id">
-					<div>
-						<label class="col-sm-2 control-label">รหัสสมาชิก</label>
-						<div class="col-sm-4">
-							<input type="text" class="form-control" name="memid" id="memid" onkeyup="checkMember()" placeholder="รหัสสมาชิก">
-						</div>
-						<!-- <input class="btn btn-danger btn_iserl tooltips" title="คลิกปุ่มเพื่อตรวจสอบข้อมูล" type="button" value="ตรวจสอบ"  /> -->
-						<p>&emsp;<small id="mem_status" ></small></p>
-					</div>
-
-					<div class="col-md-12">
-						<div class="panel panel-default">
-							<div class="panel-heading panel_heading_sub_iserl">
-								<h2>บันทึกวันที่ใช้บริการ</h2>
+			<div class="card-body">
+				<form class="form-horizontal">
+					<form method="post" action="<?php echo site_url('/swm/backend/Swm_service_manage/insert'); ?>">
+						<input type="hidden" id="su_id" name="su_id">
+						<input type="hidden" id="scp_id" name="scp_id">
+						<div>
+							<label class="col-sm-4 control-label">รหัสสมาชิก</label>
+							<div class="col-sm-2">
+								<input type="text" class="form-control" name="memid" id="memid" onkeyup="checkMember()" placeholder="รหัสสมาชิก">
 							</div>
-							<div class="panel-body">
-								<label class="col-sm-1 control-label">วันที่</label>
-								<div class="col-sm-4">
-									<input type="date" class="form-control" name="date" value="<?php echo getNowDate(); ?>" placeholder="วัน/เดือน/ปี">
-								</div>
+							<!-- <input class="btn btn-danger btn_iserl tooltips" title="คลิกปุ่มเพื่อตรวจสอบข้อมูล" type="button" value="ตรวจสอบ"  /> -->
+							<p>&emsp;<small id="mem_status"></small></p>
+						</div>
 
-								<label class="col-sm-1 control-label">เวลา</label>
-								<div class="col-sm-4"><input type="time" class="form-control" value="<?php echo date("H:i"); ?>" name="time"></div>
-								<br><br>
-								<div class="form-group">
-									<label class="col-sm-1 control-label">อายุ</label>
-									<div class="col-sm-8">
-										<label class="radio icheck" id="ageBelow18">
-											<input type="radio" name="age" checked="true" value="0">ต่ำกว่า 18 ปี
-										</label>
-										<label class="radio icheck" id="ageMoreThan18">
-											<input type="radio" name="age" value="1">18 ปีขึ้นไป
-										</label>
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading panel_heading_sub_iserl">
+									<h2>บันทึกวันที่ใช้บริการ</h2>
+								</div>
+								<div class="panel-body">
+									<label class="col-sm-4 control-label">วันที่</label>
+									<div class="col-sm-2">
+										<input type="date" class="form-control" name="date" value="<?php echo getNowDate(); ?>" placeholder="วัน/เดือน/ปี">
 									</div>
-								</div>
-								<br><br><br>
-								<label class="col-sm-1 control-label">ราคา</label>
-								<div class="col-sm-4">
-									<input type="number" class="form-control" name="cost" id="cost" placeholder="ราคา" >
-								</div>
+
+									<label class="col-sm-4 control-label">เวลา</label>
+									<div class="col-sm-2"><input type="time" class="form-control" value="<?php echo date("H:i"); ?>" name="time"></div>
+									<br><br>
+									<div class="form-group">
+										<label class="col-sm-4 control-label">อายุ</label>
+										<div class="col-sm-8">
+											<label class="radio icheck" id="ageBelow18">
+												<input type="radio" name="age" checked="true" value="0">ต่ำกว่า 18 ปี
+											</label>
+											<label class="radio icheck" id="ageMoreThan18">
+												<input type="radio" name="age" value="1">18 ปีขึ้นไป
+											</label>
+										</div>
+									</div>
+									<br><br><br>
+									<label class="col-sm-4 control-label">ราคา</label>
+									<div class="col-sm-2">
+										<input type="number" class="form-control" name="cost" id="cost" placeholder="ราคา">
+									</div>
 
 
+								</div>
 							</div>
 						</div>
-					</div>
-					<br><br><br><br><br><br><br><br><br><br><br>
-					<span class="text-gray demo-btns">
-						<a class="btn btn-inverse btn_iserl tooltips" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</a>
-						<button class="btn btn-success btn_iserl tooltips pull-right" title="คลิกปุ่มเพื่อบันทึกข้อมูล" id="insert_btn" type="submit">บันทึก</button>
-					</span>
+					</form>
 				</form>
+
+				<br><br><br><br><br>
+				<!-- <span class="text-gray demo-btns">
+					<a class="btn btn-inverse btn_iserl tooltips" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</a>
+					<div class="ml-auto">
+						<button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล'>บันทึก</button>
+					</div> -->
+					<div class="card-footer">
+                            <button class="btn" rel="tooltip" data-placement="top" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</button>
+                            <button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล'>บันทึก</button>
+                    </div>
+				</span>
 			</div>
 		</div>
+	</div>
+
 </body>
 
 </html>
