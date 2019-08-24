@@ -67,6 +67,7 @@
       </div>
     </div>
   </div>
+
   <div class="col-sm-12">
     <div class="card">
       <div class="card-header card-header-info card-header-text">
@@ -74,49 +75,42 @@
           <h4 class="card-title">ตารางข้อมูลการใช้บริการ</h4>
         </div>
       </div>
-      <div class="material-datatables">
-        <table id="datatables" class="table table-striped table-color-header table-hover table-border" cellspacing="0" width="100%" style="width:100%">
-          <thead class="text-primary">
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Date</th>
-              <th class="disabled-sorting">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td class='text-center'>61</td>
-              <td class='text-center'>25/04/2011</td>
-              <td class="td-actions text-center">
-                <button type="button" rel="tooltip" class="btn btn-primary" rel="tooltip" data-placement="top" title='คลิกเพื่อค้นหาข้อมูล'>
-                  <i class="material-icons">search</i>
-                </button>
-                <button type="button" rel="tooltip" class="btn btn-warning" rel="tooltip" data-placement="top" title='คลิกเพื่อแก้ไขข้อมูล'>
-                  <i class="material-icons">edit</i>
-                </button>
-                <button type="button" rel="tooltip" class="btn btn-danger" rel="tooltip" data-placement="top" title='คลิกเพื่อลบข้อมูล'>
-                  <i class="material-icons">close</i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Actions</th>
-            </tr>
-          </tfoot>
-        </table>
+      <div class="card-body">
+        <div class="material-datatables">
+          <table id="datatables" class="table table-striped table-color-header table-hover table-border" cellspacing="0" width="100%" style="width:100%">
+            <thead class="text-primary">
+              <tr>
+                <th>วัน เดือน ปี</th>
+                <th>เวลาเข้าใช้งาน</th>
+                <th>อายุ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1/1/2562</td>
+                <td class="text-center">8.30</td>
+                <td class="text-center">16</td>
+              </tr>
+              <tr>
+                <td class="text-center">1/1/2562</td>
+                <td class="text-center">9.30</td>
+                <td class="text-center">18</td>
+              </tr>
+              <tr>
+                <td class="text-center">1/1/2562</td>
+                <td class="text-center">12.30</td>
+                <td class="text-center">20</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th class="text-center">วัน เดือน ปี</th>
+                <th class="text-center">เวลาเข้าใช้งาน</th>
+                <th class="text-center">อายุ</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
   </div>
