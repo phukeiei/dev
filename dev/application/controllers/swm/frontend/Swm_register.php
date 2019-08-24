@@ -12,6 +12,12 @@
 require_once(dirname(__FILE__)."/Swm_front_end_controller.php");
 class Swm_register extends  Swm_front_end_controller{
 	
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->helper(array('form', 'url'));
+	}
+	
 /*
 *
 *show_form_register
@@ -134,14 +140,141 @@ class Swm_register extends  Swm_front_end_controller{
 		$this->msu->su_contact_fname = $su_contact_fname;
 		$this->msu->su_contact_lname = $su_contact_lname;
 		$this->msu->su_state = 1; // สถานะรออนุมัติ
-		$this->msu->su_create_date = Date('Y-m-d');;
+		$this->msu->su_create_date = Date('Y-m-d');
 		$this->msu->su_anit_cost = 300.00; //ผิด
-		//วันที่หมดอายุ คำนวณในเขาเลย
+
+		$next_year = strtotime("next year");
+		$this->msu->su_expire_date = Date('Y-m-d', $next_year);
 		
+		//upload img
+		$config['file_name']          	= $this->msu->su_code;
+		$config['overwrite']          	= TRUE;
+		$config['upload_path']          = APPPATH . 'views/swm/frontend/IMG/Profile/';
+		$config['allowed_types']		= '*';//'gif|jpg|png';
+		$config['max_size']             = 100;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+
+		$this->load->library('upload', $config);
+		
+		$this->upload->do_upload('profile_img');
+
+		//upload img
+		/*$data['upload'] = array('upload_data' => $this->upload->data());
+		pre($data['upload']);*/
+
 		$this->msu->insert();
-		$this->output_frontend($this->view."register/v_form_regis_data",$data);
+		//$this->output_frontend($this->view."register/v_form_regis_data",$data);
+		
+		redirect('swm/frontend/Swm_register/download_pdf','refresh');
+	}
+
+	function download_pdf()
+	{
+		$this->load->model($this->model."M_swm_user","msu");
+
+		$ps_data = $this->msu->get_data_ps($this->session->userdata("UsPsCode"))->result();
+		$data['full_name'] = $ps_data[count($ps_data)-1]->full_name;
+		$data['birthdate'] = fullDateTH3($ps_data[count($ps_data)-1]->psd_birthdate);
+		$data['age'] = calAge3($ps_data[count($ps_data)-1]->psd_birthdate);
+		
+		$data['addcur_no'] = $ps_data[count($ps_data)-1]->psd_addcur_no;
+		$data['district'] = $ps_data[count($ps_data)-1]->dist_name;
+		$data['amphur'] = $ps_data[count($ps_data)-1]->amph_name;
+		$data['province'] = $ps_data[count($ps_data)-1]->pv_name;
+		$data['zipcode'] = $ps_data[count($ps_data)-1]->psd_addcur_zipcode;
+
+		//$data['su_code'] = '6205090';
+		$data['su_code'] = $ps_data[count($ps_data)-1]->su_code;
+		$data['career'] = $ps_data[count($ps_data)-1]->su_work;
+		$data['phone_no'] = $ps_data[count($ps_data)-1]->psd_cellphone;
+
+		$data['contact_full_name'] = $ps_data[count($ps_data)-1]->contact_full_name;
+		$data['contact_phone_no'] = $ps_data[count($ps_data)-1]->su_tel_contact;
+
+		$data['create_date'] = fullDateTH3($ps_data[count($ps_data)-1]->su_create_date);
+		$data['expire_date'] = fullDateTH3($ps_data[count($ps_data)-1]->su_expire_date);
+
+		$data['application_pdf'] = $this->load->view('swm/frontend/register/v_application_pdf', $data, true);
+		$data['member_card_pdf'] = $this->load->view('swm/frontend/register/v_member_card_pdf', $data, true);
+		
+		$this->output_frontend('swm/frontend/register/v_download_pdf', $data);	
+		
+	}
+
+	function print_application_pdf()
+    {
+		$this->load->model($this->model."M_swm_user","msu");
+
+		$ps_data = $this->msu->get_data_ps($this->session->userdata("UsPsCode"))->result();
+		$data['full_name'] = $ps_data[count($ps_data)-1]->full_name;
+		$data['birthdate'] = fullDateTH3($ps_data[count($ps_data)-1]->psd_birthdate);
+		$data['age'] = calAge3($ps_data[count($ps_data)-1]->psd_birthdate);
+		
+		$data['addcur_no'] = $ps_data[count($ps_data)-1]->psd_addcur_no;
+		$data['district'] = $ps_data[count($ps_data)-1]->dist_name;
+		$data['amphur'] = $ps_data[count($ps_data)-1]->amph_name;
+		$data['province'] = $ps_data[count($ps_data)-1]->pv_name;
+		$data['zipcode'] = $ps_data[count($ps_data)-1]->psd_addcur_zipcode;
+
+		$data['su_code'] = $ps_data[count($ps_data)-1]->su_code;
+		$data['career'] = $ps_data[count($ps_data)-1]->su_work;
+		$data['phone_no'] = $ps_data[count($ps_data)-1]->psd_cellphone;
+
+		$data['contact_full_name'] = $ps_data[count($ps_data)-1]->contact_full_name;
+		$data['contact_phone_no'] = $ps_data[count($ps_data)-1]->su_tel_contact;
+
+		$data['create_date'] = fullDateTH3($ps_data[count($ps_data)-1]->su_create_date);
+		$data['expire_date'] = fullDateTH3($ps_data[count($ps_data)-1]->su_expire_date);
+
+
+        $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8']);
+
+        $mpdf->useAdobeCJK = true;
+        $mpdf->autoScriptToLang = true;
+        $mpdf->autoLangToFont = true;
+
+        $mpdf->WriteHTML($this->load->view('swm/frontend/register/v_application_pdf', $data,TRUE));
+
+        $mpdf->Output();
 	}
 	
+	function print_member_card_pdf()
+    {
+		$this->load->model($this->model."M_swm_user","msu");
+
+		$ps_data = $this->msu->get_data_ps($this->session->userdata("UsPsCode"))->result();
+		$data['full_name'] = $ps_data[count($ps_data)-1]->full_name;
+		$data['birthdate'] = fullDateTH3($ps_data[count($ps_data)-1]->psd_birthdate);
+		$data['age'] = calAge3($ps_data[count($ps_data)-1]->psd_birthdate);
+		
+		$data['addcur_no'] = $ps_data[count($ps_data)-1]->psd_addcur_no;
+		$data['district'] = $ps_data[count($ps_data)-1]->dist_name;
+		$data['amphur'] = $ps_data[count($ps_data)-1]->amph_name;
+		$data['province'] = $ps_data[count($ps_data)-1]->pv_name;
+		$data['zipcode'] = $ps_data[count($ps_data)-1]->psd_addcur_zipcode;
+
+		$data['su_code'] = $ps_data[count($ps_data)-1]->su_code;
+		$data['career'] = $ps_data[count($ps_data)-1]->su_work;
+		$data['phone_no'] = $ps_data[count($ps_data)-1]->psd_cellphone;
+
+		$data['contact_full_name'] = $ps_data[count($ps_data)-1]->contact_full_name;
+		$data['contact_phone_no'] = $ps_data[count($ps_data)-1]->su_tel_contact;
+
+		$data['create_date'] = fullDateTH3($ps_data[count($ps_data)-1]->su_create_date);
+		$data['expire_date'] = fullDateTH3($ps_data[count($ps_data)-1]->su_expire_date);
+
+
+        $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8']);
+
+        $mpdf->useAdobeCJK = true;
+        $mpdf->autoScriptToLang = true;
+        $mpdf->autoLangToFont = true;
+
+        $mpdf->WriteHTML($this->load->view('swm/frontend/register/v_member_card_pdf', $data,TRUE));
+
+        $mpdf->Output();
+    }
 
 
 /*
