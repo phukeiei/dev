@@ -16,6 +16,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>บันทึกการเข้าใช้บริการ</title>
 </head>
+<style>
+	body {
+		font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+</style>
 
 <body>
 
@@ -102,6 +107,16 @@
 				}
 			)
 		}
+
+		function checkOn() {
+			Swal.fire({
+				position: 'top-end',
+				type: 'success',
+				title: 'Your work has been saved',
+				showConfirmButton: false,
+				timer: 1500
+			})
+		}
 	</script>
 
 	<div class="col-md-8">
@@ -119,7 +134,7 @@
 						<input type="hidden" id="scp_id" name="scp_id">
 						<div>
 							<label class="col-sm-4 control-label">รหัสสมาชิก</label>
-							<div class="col-sm-2">
+							<div class="col-sm-3">
 								<input type="text" class="form-control" name="memid" id="memid" onkeyup="checkMember()" placeholder="รหัสสมาชิก">
 							</div>
 							<!-- <input class="btn btn-danger btn_iserl tooltips" title="คลิกปุ่มเพื่อตรวจสอบข้อมูล" type="button" value="ตรวจสอบ"  /> -->
@@ -133,12 +148,12 @@
 								</div>
 								<div class="panel-body">
 									<label class="col-sm-4 control-label">วันที่</label>
-									<div class="col-sm-2">
+									<div class="col-sm-4">
 										<input type="date" class="form-control" name="date" value="<?php echo getNowDate(); ?>" placeholder="วัน/เดือน/ปี">
 									</div>
 
 									<label class="col-sm-4 control-label">เวลา</label>
-									<div class="col-sm-2"><input type="time" class="form-control" value="<?php echo date("H:i"); ?>" name="time"></div>
+									<div class="col-sm-4"><input type="time" class="form-control" value="<?php echo date("h:i"); ?>" name="time"></div>
 									<br><br>
 									<div class="form-group">
 										<label class="col-sm-4 control-label">อายุ</label>
@@ -156,28 +171,19 @@
 									<div class="col-sm-2">
 										<input type="number" class="form-control" name="cost" id="cost" placeholder="ราคา">
 									</div>
-
-
 								</div>
 							</div>
 						</div>
 					</form>
 				</form>
-
 				<br><br><br><br><br>
-				<!-- <span class="text-gray demo-btns">
-					<a class="btn btn-inverse btn_iserl tooltips" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</a>
-					<div class="ml-auto">
-						<button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล'>บันทึก</button>
-					</div> -->
-					<div class="card-footer">
-                            <button class="btn" rel="tooltip" data-placement="top" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</button>
-                            <button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล'>บันทึก</button>
-                    </div>
-				</span>
+				<div class="card-footer">
+					<button class="btn" rel="tooltip" data-placement="top" title="คลิกปุ่มเพื่อเคลียร์ข้อมูล" onclick="reset()">เคลียร์</button>
+					<button class="btn btn-success" rel="tooltip" data-placement="top" title='คลิกเพื่อบันทึกข้อมูล' onclick="checkOn()">บันทึก</button>
+				</div>
 			</div>
+
 		</div>
-	</div>
 
 </body>
 
