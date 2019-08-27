@@ -17,8 +17,15 @@ class Swm_manage_member extends  UMS_Controller
 
     public function member_table_show()
     {
+        $member_status = $this->input->post('status');
+
+        if($member_status==NULL)
+        {
+            $member_status = 3;
+        }
+
         $this->load->model('swm/backend/M_swm_user', 'msu');
-        $data['rs_userdata'] = $this->msu->get_all_user_swm()->result();
+        $data['rs_userdata'] = $this->msu->get_all_user_swm($member_status)->result();
 
         foreach ($data['rs_userdata'] as $key) {
             if ($key->ps_fname == NULL) {
@@ -30,8 +37,17 @@ class Swm_manage_member extends  UMS_Controller
             if ($key->ss_name == NULL) {
                 $key->ss_name = "-";
             }
+            $key->age = calAge3($key->age);
+
+            if($key->su_create_date != NULL)
+                $key->su_create_date = fullDateTH3($key->su_create_date);
         }
-        $this->output('swm/backend/manage_member/v_member_table_show', $data);
+        $data['v_table'] = $this->load->view('swm/backend/manage_member/v_table', $data, TRUE);
+
+        if($this->input->post('status')==NULL)
+            $this->output('swm/backend/manage_member/v_member_table_show', $data);
+        else
+            echo json_encode($data['rs_userdata']);
     }
     public function member_data_show($ps){
         $this->load->model('swm/backend/M_swm_user','msu');

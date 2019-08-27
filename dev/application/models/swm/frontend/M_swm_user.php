@@ -93,6 +93,7 @@ class M_swm_user extends Da_swm_user {
 				ph_user.pf_name as con_pf_name,
 				CONCAT(ph_user.pf_name,su_contact_fname,' ',su_contact_lname) AS contact_full_name,
 				su_create_date,
+				su_expire_date,
 				su_tel_contact,
 				ss_name
 			FROM ".$this->swm_db.".swm_user
@@ -147,6 +148,7 @@ class M_swm_user extends Da_swm_user {
 				su_contact_lname,
 				CONCAT(ph_user.pf_name,su_contact_fname,' ',su_contact_lname) AS contact_full_name,
 				su_create_date,
+				su_expire_date,
 				su_tel_contact,
 				ss_name
 			FROM ".$this->hr_db.".hr_person

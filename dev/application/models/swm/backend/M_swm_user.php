@@ -120,7 +120,7 @@ class M_swm_user extends Da_swm_user
 		return $query;
 	}
 
-	public function get_all_user_swm()
+	public function get_all_user_swm($member_status)
 	{
 		$sql = "SELECT su_ps_id, su_code,
 		ps_fname,ps_lname,
@@ -133,6 +133,7 @@ class M_swm_user extends Da_swm_user
 		ON a1.su_ps_id = a3.ps_id
 		LEFT JOIN $this->hr_db.hr_person_detail as a4
 		ON a3.ps_id = a4.psd_ps_id
+		WHERE a2.ss_id = $member_status
 		";
 
 		$query = $this->swm->query($sql);
